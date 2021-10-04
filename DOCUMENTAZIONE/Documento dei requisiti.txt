@@ -1,0 +1,19 @@
+Documento dei Requisiti
+
+Requisiti funzionali:
+	- [MUST] L'utente amministatore accede al software con il suo acc.
+	- [MUST] L'utente amministratore può registrare un PC.
+	- [MUST] L'utente amminitratore sceglie se assegnarlo a noleggio o ad un aula.
+	- [MUST] L'utente amministratore può eliminare un  PC.
+	- [MUST] L'utente amministratore può visualizzare il magazzino.
+	- [MUST] Lutente amministratore può aggiornare lo stato dei PC.
+	- [MUST] Il cliente convalida il biglietto avvicinandolo al lettore NFC.
+	- [MAY]. Visualizzare in modo schematico le aule.
+	- [SHOULD] l'utente amministratore può creare altri account per accedere al software.
+	- [SHOULD] L'utente che dimentica l'account di accesso può richiedere una mail delle credenziali.
+	- [SHOULD] L'utente può cambiare la password.
+
+Requisiti Non-Funzionali:
+	
+Requisiti Tecnologici:
+	
