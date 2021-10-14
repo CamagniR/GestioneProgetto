@@ -1,0 +1,19 @@
+﻿<Window x:Class="GestionePC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="Logo" Height="116" Margin="228,10,228.333,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" Height="36" Margin="303,212,303.333,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <Label Content="logo" HorizontalAlignment="Left" Margin="640,44,0,0" VerticalAlignment="Top" Height="55" Width="93"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="303,181,0,0" VerticalAlignment="Top" Width="66"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="303,274,0,0" VerticalAlignment="Top" Width="66"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="36" Margin="303,305,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="187"/>
+        <Button x:Name="btnAccedi" Content="ACCEDI" HorizontalAlignment="Left" Margin="640,370,0,0" VerticalAlignment="Top" Width="93" Height="35"/>
+
+    </Grid>
+</Window>
