@@ -14,6 +14,13 @@ Requisiti funzionali:
 	- [SHOULD] L'utente può cambiare la password.
 
 Requisiti Non-Funzionali:
+	- [SHOULD] Inserire l'orario della registrazione di un pc ad un utente .
+	- [MUST] Il controllo delle credenziali deve avvenire in un tempo inferiore a un secondo.
+	- [MUST] Il sistema mantiene memorizzati tutti gli account creati dagli utenti e le informazioni di ciascun pc in un database (file).
+	- [MAY] Il sistema deve mantiene memorizzati tutte le informazioni di ciascuno su di un server.
 	
 Requisiti Tecnologici:
+	- [MUST] Linguaggio di programmazione c#
+	- [MUST] Linguaggio HTML, CSS, JavaScript
+	- [MAY] Pistola per leggere BarCode 
 	
