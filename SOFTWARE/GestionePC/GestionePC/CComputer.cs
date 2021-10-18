@@ -43,7 +43,9 @@ namespace GestionePC
 
         public string ToCSV()
         {
-            return barCode + ";" + modello + ";" + specifiche;
+            string tmp="";
+            tmp = barCode + ";" + modello + ";" + specifiche;
+            return tmp;
         }
 
         public override string ToString()

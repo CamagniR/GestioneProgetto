@@ -20,9 +20,34 @@ namespace GestionePC
     /// </summary>
     public partial class MainWindow : Window
     {
+        string credenziali="ADMIN";
+        string password = "Admin";
+
+
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnAccedi_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (txtNome.Text == "ADMIN" && txtPassword.Text == "Admin")
+            {
+                FinestraHome finestra = new FinestraHome();
+                finestra.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show( "Credenziali errate, riprovare");
+                txtPassword.Text = "";
+                txtNome.Text = "";
+            }
+
+
+
+
         }
     }
 }

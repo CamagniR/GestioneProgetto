@@ -78,6 +78,7 @@
     <Compile Include="CAula.cs" />
     <Compile Include="CComputer.cs" />
     <Compile Include="CDocente.cs" />
+    <Compile Include="CListaComputer.cs" />
     <Compile Include="FinestraHome.xaml.cs">
       <DependentUpon>FinestraHome.xaml</DependentUpon>
     </Compile>
@@ -117,6 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo_small.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
