@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestionePC
 {
-    class CAula
+    public class CAula
     {
         private CComputer PC;
         private string dataRegsitro;

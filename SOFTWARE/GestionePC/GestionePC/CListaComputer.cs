@@ -36,7 +36,7 @@ namespace GestionePC
                 listaPC.Add(pTemp);
             }
         }
-        public List<CComputer> getBanca()
+        public List<CComputer> getMagazzino()
         {
             return listaPC;
         }
@@ -44,10 +44,11 @@ namespace GestionePC
         //aggiunge un pc solo se non è gia presente in lista
         public void registraPC(CComputer pc)
         {
-            if (controlloUtente(pc)==false)
+            if (controlloPC(pc)==false)
             {
                 listaPC.Add(pc);
             }
+            
             
         }
 
@@ -55,7 +56,7 @@ namespace GestionePC
         // true= pc presente in lista
         // false= pc non registrato nella lista
 
-        public bool controlloUtente(CComputer pcCercato)
+        public bool controlloPC(CComputer pcCercato)
         {
             for (int i = 0; i < listaPC.Count; i++)
             {
