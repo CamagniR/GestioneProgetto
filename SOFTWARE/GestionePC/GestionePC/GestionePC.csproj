@@ -89,6 +89,7 @@
       <DependentUpon>FinestraRicerca.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListaPCinAula.cs" />
+    <Compile Include="ListaPCNoleggio.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

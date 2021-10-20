@@ -7,35 +7,33 @@ using System.Threading.Tasks;
 
 namespace GestionePC
 {
-    public class ListaPCinAula
+    public class ListaPCNoleggio
     {
+        private List<CDocente> listaNoleggi;
+        private string nomeFile= Directory.GetCurrentDirectory() + "\\docenti.txt";
 
-        private List<CAula> listaAula;
-        private string nomeFile= Directory.GetCurrentDirectory() + "\\pcAula.txt";
-
-        public ListaPCinAula()
+        public ListaPCNoleggio()
         {
-            listaAula = new List<CAula>();
+            listaNoleggi = new List<CDocente>();
         }
 
-        //aggiunge un pc alla lista delle aule solo se non è gia presente.
-        public void aggiungiInLista(CAula oggetto)
+        public void aggiungiInLista(CDocente oggetto)
         {
-            if (controlloPresenza(oggetto)==false)
+            if (controlloPresenza(oggetto) == false)
             {
-                listaAula.Add(oggetto);
+                listaNoleggi.Add(oggetto);
             }
         }
 
 
         public void Carica()
         {
-            listaAula.Clear();
-            CAula pTemp;
+            listaNoleggi.Clear();
+            CDocente pTemp;
 
             string linea = "";
             string tutto = File.ReadAllText(nomeFile);
-            if (tutto!=null && tutto!="")
+            if (tutto!= null && tutto!="")
             {
                 string[] Linee = tutto.Split('\n');
 
@@ -47,18 +45,18 @@ namespace GestionePC
                     CComputer tmp = new CComputer(campi[0], campi[1], campi[2]);
 
 
-                    pTemp = new CAula(tmp, campi[3], campi[4], campi[5], campi[6]);
-                    listaAula.Add(pTemp);
+                    pTemp = new CDocente(tmp, campi[3], campi[4], campi[5], campi[6]);
+                    listaNoleggi.Add(pTemp);
                 }
             }
             
         }
 
-        public bool controlloPresenza(CAula pcCercato)
+        public bool controlloPresenza(CDocente pcCercato)
         {
-            for (int i = 0; i < listaAula.Count; i++)
+            for (int i = 0; i < listaNoleggi.Count; i++)
             {
-                if (listaAula.ElementAt(i).getPC().getBarCode() == pcCercato.getPC().getBarCode())
+                if (listaNoleggi.ElementAt(i).getPC().getBarCode() == pcCercato.getPC().getBarCode())
                 {
                     return true;
                 }
@@ -70,10 +68,10 @@ namespace GestionePC
         public string GetAllCsv()
         {
             string ritorno = "";
-            for (int i = 0; i < listaAula.Count(); i++)
+            for (int i = 0; i < listaNoleggi.Count(); i++)
             {
-                if (i != listaAula.Count() - 1) ritorno += listaAula.ElementAt(i).ToCSV() + "\n";
-                else ritorno += listaAula.ElementAt(i).ToCSV();
+                if (i != listaNoleggi.Count() - 1) ritorno += listaNoleggi.ElementAt(i).ToCSV() + "\n";
+                else ritorno += listaNoleggi.ElementAt(i).ToCSV();
             }
             return ritorno;
         }
@@ -87,8 +85,6 @@ namespace GestionePC
         {
             this.nomeFile = nomeFile;
         }
-
-       
 
     }
 }

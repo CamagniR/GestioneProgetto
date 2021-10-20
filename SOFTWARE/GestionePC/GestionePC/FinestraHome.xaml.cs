@@ -19,9 +19,25 @@ namespace GestionePC
     /// </summary>
     public partial class FinestraHome : Window
     {
+
+        CListaComputer magazzino2;
+        ListaPCinAula PCinAula2;
+        ListaPCNoleggio pcNoleggio2;
+
         public FinestraHome()
         {
             InitializeComponent();
         }
+
+        public FinestraHome(CListaComputer magazzino2, ListaPCinAula aula2, ListaPCNoleggio docenti2)
+        {
+
+            InitializeComponent();
+            this.magazzino2 = magazzino2;
+            this.PCinAula2 = aula2;
+            this.pcNoleggio2 = docenti2;
+
+        }
+
     }
 }

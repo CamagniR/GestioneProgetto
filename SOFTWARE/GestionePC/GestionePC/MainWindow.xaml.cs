@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,18 +24,32 @@ namespace GestionePC
         string credenziali="ADMIN";
         string password = "Admin";
 
-
+        CListaComputer magazzino;
+        ListaPCinAula PCinAula;
+        ListaPCNoleggio pcNoleggio;
 
         public MainWindow()
         {
+
+            magazzino = new CListaComputer();
+            PCinAula = new ListaPCinAula();
+            pcNoleggio = new ListaPCNoleggio();
+
+
             InitializeComponent();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            magazzino.Carica();
+            PCinAula.Carica();
+            pcNoleggio.Carica();
+
+
         }
 
         private void BtnAccedi_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (txtNome.Text == "ADMIN" && txtPassword.Text == "Admin")
             {
-                FinestraHome finestra = new FinestraHome();
+                FinestraHome finestra = new FinestraHome(magazzino, PCinAula, pcNoleggio);
                 finestra.Show();
                 this.Hide();
             }

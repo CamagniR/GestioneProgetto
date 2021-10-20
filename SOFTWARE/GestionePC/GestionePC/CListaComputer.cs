@@ -11,7 +11,7 @@ namespace GestionePC
     {
 
         private List<CComputer> listaPC;
-        private string nomeFile;
+        private string nomeFile = Directory.GetCurrentDirectory() + "\\magazzino.txt";
 
         public CListaComputer()
         {
@@ -25,16 +25,20 @@ namespace GestionePC
 
             string linea = "";
             string tutto = File.ReadAllText(nomeFile);
-            string[] Linee = tutto.Split('\n');
-
-            for (int i = 0; i < Linee.Length; i++)
+            if (tutto!=null && tutto!="")
             {
-                linea = Linee[i];
-                string[] campi = linea.Split(';');
+                string[] Linee = tutto.Split('\n');
 
-                pTemp = new CComputer(campi[0], campi[1], campi[2]);
-                listaPC.Add(pTemp);
+                for (int i = 0; i < Linee.Length; i++)
+                {
+                    linea = Linee[i];
+                    string[] campi = linea.Split(';');
+
+                    pTemp = new CComputer(campi[0], campi[1], campi[2]);
+                    listaPC.Add(pTemp);
+                }
             }
+            
         }
         public List<CComputer> getMagazzino()
         {
@@ -96,7 +100,7 @@ namespace GestionePC
         
         public void modifica(string descrizione,int i)
         {
-          // listaPC.ElementAt(i).getSpecifiche() = descrizione;
+           listaPC.ElementAt(i).setSpecifiche(descrizione);
         }
 
 

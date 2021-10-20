@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="FinestraHome" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnRegistra" Content="Button" HorizontalAlignment="Left" Margin="83,175,0,0" VerticalAlignment="Top" Width="167" Height="71"/>
+        <Button x:Name="btnRegistra" Content="Registra" HorizontalAlignment="Left" Margin="83,175,0,0" VerticalAlignment="Top" Width="167" Height="71"/>
         <Button x:Name="btnBancode" Content="Tasto  ricerca per bancode" HorizontalAlignment="Left" Margin="327,175,0,0" VerticalAlignment="Top" Width="167" Height="71"/>
         <Button x:Name="btnElimina" Content="Elimina un pc" HorizontalAlignment="Left" Margin="569,175,0,0" VerticalAlignment="Top" Width="167" Height="71"/>
 

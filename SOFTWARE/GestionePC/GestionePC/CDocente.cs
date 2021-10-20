@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestionePC
 {
-    class CDocente
+    public class CDocente
     {
         private CComputer PC;
         private string dataRegistro;
@@ -14,6 +14,24 @@ namespace GestionePC
         private string cognome;
         private string indirizziInsegnamento;
 
+        public CDocente()
+        {
+            PC = new CComputer();
+            dataRegistro = "";
+            nome = "";
+            cognome = "";
+            indirizziInsegnamento = "";
+
+        }
+
+        public CDocente(CComputer pC, string dataRegistro, string nome, string cognome, string indirizziInsegnamento)
+        {
+            PC = pC ;
+            this.dataRegistro = dataRegistro;
+            this.nome = nome;
+            this.cognome = cognome ;
+            this.indirizziInsegnamento = indirizziInsegnamento ;
+        }
 
         public CComputer getPC()
         {

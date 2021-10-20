@@ -40,6 +40,11 @@ namespace GestionePC
         {
             return specifiche;
         }
+        public void setSpecifiche(string specifiche)
+        {
+            this.specifiche=specifiche;
+        }
+
 
         public string ToCSV()
         {
