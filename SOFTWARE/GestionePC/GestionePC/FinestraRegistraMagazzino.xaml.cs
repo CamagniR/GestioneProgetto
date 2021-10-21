@@ -41,5 +41,19 @@ namespace GestionePC
             finestra.Show();
             this.Hide();
         }
+
+        private void btnRegistra_Click(object sender, RoutedEventArgs e)
+        {
+            if(txtBar.Text!=""&& txtPc.Text != "")
+            {
+                CComputer tmp = new CComputer(txtBar.Text, txtPc.Text, txtStat.Text);
+                magazzino2.registraPC(tmp);
+                magazzino2.Salva();
+            }
+            else
+            {
+                MessageBox.Show("compilare tutti i campi");
+            }
+        }
     }
 }

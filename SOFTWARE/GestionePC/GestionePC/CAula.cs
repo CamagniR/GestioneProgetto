@@ -9,7 +9,7 @@ namespace GestionePC
     public class CAula
     {
         private CComputer PC;
-        private string dataRegsitro;
+        private string dataRegistro;
         private string indirizzo;
         private string classe;
         private string aula;
@@ -17,16 +17,16 @@ namespace GestionePC
         public CAula()
         {
             PC = new CComputer();
-            dataRegsitro = "";
+            dataRegistro = "";
             indirizzo = "";
             classe = "";
             aula = "";
         }
 
-        public CAula(CComputer PC, string dataRegsitro, string indirizzo, string classe, string aula)
+        public CAula(CComputer PC, string dataRegistro, string indirizzo, string classe, string aula)
         {
             this.PC = PC;
-            this.dataRegsitro = dataRegsitro;
+            this.dataRegistro = dataRegistro;
             this.indirizzo = indirizzo;
             this.classe = classe;
             this.aula = aula;
@@ -39,7 +39,7 @@ namespace GestionePC
 
         public string getDataRegsitro()
         {
-            return dataRegsitro;
+            return dataRegistro;
         }
         public string getIndirizzo()
         {
@@ -56,11 +56,11 @@ namespace GestionePC
 
         public override string ToString()
         {
-            return PC+" "+dataRegsitro+" "+ indirizzo+" "+classe+" "+aula;
+            return PC+" "+dataRegistro+" "+ indirizzo+" "+classe+" "+aula;
         }
         public string ToCSV()
         {
-            return PC + ";" + dataRegsitro + ";" + indirizzo + ";" + classe + ";" + aula;
+            return PC + ";" + dataRegistro + ";" + indirizzo + ";" + classe + ";" + aula;
         }
     }
 }
