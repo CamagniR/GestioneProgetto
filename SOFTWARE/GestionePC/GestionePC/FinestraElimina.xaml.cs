@@ -15,19 +15,19 @@ using System.Windows.Shapes;
 namespace GestionePC
 {
     /// <summary>
-    /// Logica di interazione per FinestraRicerca.xaml
+    /// Logica di interazione per FinestraElimina.xaml
     /// </summary>
-    public partial class FinestraRicerca : Window
+    public partial class FinestraElimina : Window
     {
         CListaComputer magazzino2;
         ListaPCinAula PCinAula2;
         ListaPCNoleggio pcNoleggio2;
 
-        public FinestraRicerca()
+        public FinestraElimina()
         {
             InitializeComponent();
         }
-        public FinestraRicerca(CListaComputer magazzino2, ListaPCinAula aula2, ListaPCNoleggio docenti2)
+        public FinestraElimina(CListaComputer magazzino2, ListaPCinAula aula2, ListaPCNoleggio docenti2)
         {
 
             InitializeComponent();

@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="FinestraRegistra" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnNoleggia" Content="Noleggia Ad Un Prof" HorizontalAlignment="Left" Margin="171,146,0,0" VerticalAlignment="Top" Width="145" Height="78"/>
-        <Button x:Name="btnRegistra" Content="Registra in un aula" HorizontalAlignment="Left" Margin="492,146,0,0" VerticalAlignment="Top" Width="145" Height="78"/>
+        <Button x:Name="btnNoleggiaProf" Content="Noleggia Ad Un Prof" HorizontalAlignment="Left" Margin="41,115,0,0" VerticalAlignment="Top" Width="145" Height="78" Click="btnNoleggiaProf_Click"/>
+        <Button x:Name="btnRegistraAula" Content="Registra in un aula" HorizontalAlignment="Left" Margin="359,115,0,0" VerticalAlignment="Top" Width="145" Height="78" Click="btnRegistraAula_Click"/>
+        <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="10,370,0,0" VerticalAlignment="Top" Width="75" Click="btnHome_Click"/>
+        <Button x:Name="btnRegistraMagazzino" Content="REGISTRA IN MAGAZZINO" HorizontalAlignment="Left" Margin="574,115,0,0" VerticalAlignment="Top" Width="173" Height="86" Click="btnRegistraMagazzino_Click"/>
 
     </Grid>
 </Window>

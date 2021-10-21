@@ -15,19 +15,19 @@ using System.Windows.Shapes;
 namespace GestionePC
 {
     /// <summary>
-    /// Logica di interazione per FinestraRicerca.xaml
+    /// Logica di interazione per FinestraNoleggiaProf.xaml
     /// </summary>
-    public partial class FinestraRicerca : Window
+    public partial class FinestraNoleggiaProf : Window
     {
         CListaComputer magazzino2;
         ListaPCinAula PCinAula2;
         ListaPCNoleggio pcNoleggio2;
 
-        public FinestraRicerca()
+        public FinestraNoleggiaProf()
         {
             InitializeComponent();
         }
-        public FinestraRicerca(CListaComputer magazzino2, ListaPCinAula aula2, ListaPCNoleggio docenti2)
+        public FinestraNoleggiaProf(CListaComputer magazzino2, ListaPCinAula aula2, ListaPCNoleggio docenti2)
         {
 
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace GestionePC
             this.pcNoleggio2 = docenti2;
         }
 
-        private void btnHome_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             FinestraHome finestra = new FinestraHome(magazzino2, PCinAula2, pcNoleggio2);
             finestra.Show();

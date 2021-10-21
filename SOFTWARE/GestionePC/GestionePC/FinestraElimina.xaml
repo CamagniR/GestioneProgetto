@@ -1,0 +1,14 @@
+﻿<Window x:Class="GestionePC.FinestraElimina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePC"
+        mc:Ignorable="d"
+        Title="FinestraElimina" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="124,361,0,0" VerticalAlignment="Top" Width="75" Click="btnHome_Click"/>
+        <Label Content="FINESTRA ELIMINA" HorizontalAlignment="Left" Margin="329,112,0,0" VerticalAlignment="Top" Height="61" Width="222"/>
+
+    </Grid>
+</Window>

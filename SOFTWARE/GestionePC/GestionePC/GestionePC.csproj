@@ -55,11 +55,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FinestraElimina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FinestraHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FinestraNoleggiaProf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FinestraRegistra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinestraRegistraAula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinestraRegistraMagazzino.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -79,11 +95,23 @@
     <Compile Include="CComputer.cs" />
     <Compile Include="CDocente.cs" />
     <Compile Include="CListaComputer.cs" />
+    <Compile Include="FinestraElimina.xaml.cs">
+      <DependentUpon>FinestraElimina.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FinestraHome.xaml.cs">
       <DependentUpon>FinestraHome.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FinestraNoleggiaProf.xaml.cs">
+      <DependentUpon>FinestraNoleggiaProf.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FinestraRegistra.xaml.cs">
       <DependentUpon>FinestraRegistra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinestraRegistraAula.xaml.cs">
+      <DependentUpon>FinestraRegistraAula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinestraRegistraMagazzino.xaml.cs">
+      <DependentUpon>FinestraRegistraMagazzino.xaml</DependentUpon>
     </Compile>
     <Compile Include="FinestraRicerca.xaml.cs">
       <DependentUpon>FinestraRicerca.xaml</DependentUpon>

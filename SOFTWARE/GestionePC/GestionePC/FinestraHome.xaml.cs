@@ -39,5 +39,25 @@ namespace GestionePC
 
         }
 
+        private void btnRegistra_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraRegistra finestra = new FinestraRegistra(magazzino2, PCinAula2, pcNoleggio2);
+            finestra.Show();
+            this.Hide();
+        }
+
+        private void btnBancode_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraRicerca finestra = new FinestraRicerca(magazzino2, PCinAula2, pcNoleggio2);
+            finestra.Show();
+            this.Hide();
+        }
+
+        private void btnElimina_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraElimina finestra = new FinestraElimina(magazzino2, PCinAula2, pcNoleggio2);
+            finestra.Show();
+            this.Hide();
+        }
     }
 }
