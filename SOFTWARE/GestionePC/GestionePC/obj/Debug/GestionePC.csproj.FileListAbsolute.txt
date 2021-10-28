@@ -48,3 +48,7 @@ C:\Users\Matteo\Documents\ProgettoGestioneProgetti\SOFTWARE\GestionePC\GestioneP
 C:\Users\Matteo\Documents\ProgettoGestioneProgetti\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraNoleggiaProf.baml
 C:\Users\Matteo\Documents\ProgettoGestioneProgetti\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraAula.baml
 C:\Users\Matteo\Documents\ProgettoGestioneProgetti\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraMagazzino.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraElimina.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraNoleggiaProf.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraAula.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraMagazzino.g.cs

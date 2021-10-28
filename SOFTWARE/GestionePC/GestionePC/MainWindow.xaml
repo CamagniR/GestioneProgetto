@@ -11,9 +11,9 @@
         <TextBox x:Name="txtNome" Height="36" Margin="303,212,303.333,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <Label Content="Nome" HorizontalAlignment="Left" Margin="303,181,0,0" VerticalAlignment="Top" Width="66"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="303,274,0,0" VerticalAlignment="Top" Width="66"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="36" Margin="303,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187"/>
         <Button x:Name="btnAccedi" Content="ACCEDI" HorizontalAlignment="Left" Margin="637,353,0,0" VerticalAlignment="Top" Width="110" Height="42" MouseDoubleClick="BtnAccedi_MouseDoubleClick"/>
         <Image Margin="203,10,203,293" Source="logo_small.png" Stretch="Fill"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Height="36" Margin="303,305,0,0" VerticalAlignment="Top" Width="186" RenderTransformOrigin="1.856,0.717"/>
 
     </Grid>
 </Window>

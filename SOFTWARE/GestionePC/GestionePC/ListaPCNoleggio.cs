@@ -24,6 +24,16 @@ namespace GestionePC
                 listaNoleggi.Add(oggetto);
             }
         }
+        public void eliminaConBarCode(string barCode)
+        {
+            for (int i = 0; i < listaNoleggi.Count; i++)
+            {
+                if (listaNoleggi.ElementAt(i).getPC().getBarCode() == barCode)
+                {
+                    listaNoleggi.RemoveAt(i);
+                }
+            }
+        }
 
 
         public void Carica()

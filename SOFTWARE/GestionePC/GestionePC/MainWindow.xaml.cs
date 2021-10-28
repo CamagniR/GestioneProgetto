@@ -47,7 +47,7 @@ namespace GestionePC
 
         private void BtnAccedi_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (txtNome.Text == "ADMIN" && txtPassword.Text == "Admin")
+            if (txtNome.Text == "ADMIN" && txtPassword.Password == "Admin")
             {
                 FinestraHome finestra = new FinestraHome(magazzino, PCinAula, pcNoleggio);
                 finestra.Show();
@@ -56,7 +56,7 @@ namespace GestionePC
             else
             {
                 MessageBox.Show( "Credenziali errate, riprovare");
-                txtPassword.Text = "";
+                txtPassword.Password = "";
                 txtNome.Text = "";
             }
 

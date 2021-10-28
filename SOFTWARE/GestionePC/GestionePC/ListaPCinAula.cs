@@ -66,7 +66,16 @@ namespace GestionePC
             return false;
         }
 
-
+        public void eliminaConBarCode(string barCode)
+        {
+            for (int i = 0; i < listaAula.Count; i++)
+            {
+                if (listaAula.ElementAt(i).getPC().getBarCode() == barCode)
+                {
+                    listaAula.RemoveAt(i);
+                }
+            }
+        }
         public string GetAllCsv()
         {
             string ritorno = "";

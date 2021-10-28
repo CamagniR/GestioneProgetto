@@ -84,6 +84,17 @@ namespace GestionePC
             }
         }
 
+        public void eliminaConBarCode(string barCode)
+        {
+            for (int i = 0; i < listaPC.Count; i++)
+            {
+                if (listaPC.ElementAt(i).getBarCode() ==  barCode)
+                {
+                    listaPC.RemoveAt(i);
+                }
+            }
+        }
+
         //metodo per visualizzare un pc dato il barCode
         public CComputer visualizzaPC(string barCode)
         {

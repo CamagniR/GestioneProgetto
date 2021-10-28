@@ -42,5 +42,17 @@ namespace GestionePC
             finestra.Show();
             this.Hide();
         }
+
+        private void BtnElimina_Click(object sender, RoutedEventArgs e)
+        {
+
+            string daEliminare = "";
+            daEliminare = txtBarCode.Text;
+
+            magazzino2.eliminaConBarCode(daEliminare);
+            PCinAula2.eliminaConBarCode(daEliminare);
+            pcNoleggio2.eliminaConBarCode(daEliminare);
+
+        }
     }
 }
