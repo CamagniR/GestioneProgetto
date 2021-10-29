@@ -47,8 +47,16 @@ namespace GestionePC
             if(txtBar.Text!=""&& txtPc.Text != "")
             {
                 CComputer tmp = new CComputer(txtBar.Text, txtPc.Text, txtStat.Text);
-                magazzino2.registraPC(tmp);
-                magazzino2.Salva();
+                if (magazzino2.controlloPC(tmp))
+                {
+                    MessageBox.Show("pc gia registrato in magazzino");
+                }
+                else
+                {
+                    MessageBox.Show("pc registrato in magazzino");
+                    magazzino2.registraPC(tmp);
+                    magazzino2.Salva();
+                }
             }
             else
             {

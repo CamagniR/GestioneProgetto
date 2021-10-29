@@ -60,7 +60,7 @@ namespace GestionePC
         }
         public string ToCSV()
         {
-            return PC + ";" + dataRegistro + ";" + indirizzo + ";" + classe + ";" + aula;
+            return PC.getBarCode()+";"+PC.getModello()+";"+PC.getSpecifiche() + ";" + dataRegistro + ";" + indirizzo + ";" + classe + ";" + aula;
         }
     }
 }

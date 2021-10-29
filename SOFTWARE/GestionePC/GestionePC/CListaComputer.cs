@@ -53,7 +53,6 @@ namespace GestionePC
                 listaPC.Add(pc);
             }
             
-            
         }
 
         // cerca se un pc è già presente nella lista di computer registrati. 

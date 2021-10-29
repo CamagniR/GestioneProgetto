@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GestionePC
 {
-    public class ListaPCNoleggio
+    public class ListaPCNoleggio //lista pc noleggiati ai docenti
     {
         private List<CDocente> listaNoleggi;
         private string nomeFile= Directory.GetCurrentDirectory() + "\\docenti.txt";
@@ -62,7 +62,7 @@ namespace GestionePC
             
         }
 
-        public bool controlloPresenza(CDocente pcCercato)
+        public bool controlloPresenza(CDocente pcCercato)//true-->gia noleggiato   false-->non noleggiato
         {
             for (int i = 0; i < listaNoleggi.Count; i++)
             {

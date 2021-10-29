@@ -1,0 +1,3 @@
+BARCODE;modello pc;stato pc
+BARCODE2;modello pc;stato pc
+BARCODE3;modello pc3;stato pc3

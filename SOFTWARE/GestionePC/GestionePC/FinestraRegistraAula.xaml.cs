@@ -48,9 +48,20 @@ namespace GestionePC
             {
                 CComputer tmp = new CComputer(txtBar.Text, txtPc.Text, txtStat.Text);
                 CAula temp = new CAula(tmp, txtData.Text, txtIndirizzo.Text, txtClasse.Text, txtAula.Text);
-                PCinAula2.aggiungiInLista(temp);
-                magazzino2.registraPC(tmp);
+                PCinAula2.aggiungiInLista(temp);//aggiunge nel file lista del pc in aula    
+                magazzino2.registraPC(tmp);//deve registrare il computer assegnato anche in magazzino
                 PCinAula2.Salva();
+                magazzino2.Salva();
+                MessageBox.Show("computer registrato correttamente");
+
+                txtBar.Text = "";
+                txtPc.Text = "";
+                txtStat.Text = "";
+                txtData.Text = "";
+                txtIndirizzo.Text = "";
+                txtClasse.Text = "";
+                txtAula.Text = "";
+
             }
             else
             {

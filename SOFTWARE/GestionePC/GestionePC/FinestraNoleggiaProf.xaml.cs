@@ -36,11 +36,45 @@ namespace GestionePC
             this.pcNoleggio2 = docenti2;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnHome_click(object sender, RoutedEventArgs e)
         {
             FinestraHome finestra = new FinestraHome(magazzino2, PCinAula2, pcNoleggio2);
             finestra.Show();
             this.Hide();
+        }
+
+        private void btnNoleggia_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtBar.Text != "" && txtPc.Text != "" && txtStat.Text != "" && txtData.Text != "" && txtNome.Text != "" && txtCognome.Text != "" && txtInsegnamento.Text!="")
+            {
+                CComputer tmpPC = new CComputer(txtBar.Text, txtPc.Text, txtStat.Text);
+                CDocente tmpDocente = new CDocente(tmpPC, txtData.Text, txtNome.Text, txtCognome.Text, txtInsegnamento.Text);
+                
+                if(pcNoleggio2.controlloPresenza(tmpDocente))
+                {
+                    MessageBox.Show("computer gia assegnato");
+                }
+                else
+                {
+                    pcNoleggio2.aggiungiInLista(tmpDocente);
+                    pcNoleggio2.Salva();
+                    MessageBox.Show("computer noleggiato ");
+                }
+  
+
+                txtBar.Text = "";
+                txtPc.Text = "";
+                txtStat.Text = "";
+                txtData.Text = "";
+                txtNome.Text = "";
+                txtCognome.Text = "";
+                txtInsegnamento.Text = "";
+
+            }
+            else
+            {
+                MessageBox.Show("compilare tutti i campi");
+            }
         }
     }
 }

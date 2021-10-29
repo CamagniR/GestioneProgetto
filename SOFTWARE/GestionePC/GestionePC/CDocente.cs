@@ -61,7 +61,8 @@ namespace GestionePC
 
         public string ToCSV()
         {
-            return PC + ";" + nome + ";" + cognome + ";" + dataRegistro + ";" + indirizziInsegnamento;
+            return PC.getBarCode()+";"+PC.getModello()+";"+PC.getSpecifiche() + ";" + nome + ";" + cognome + ";" + dataRegistro + ";" + indirizziInsegnamento;
+            
         }
     }
 }
