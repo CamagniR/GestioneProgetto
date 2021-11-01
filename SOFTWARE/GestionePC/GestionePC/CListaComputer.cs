@@ -71,6 +71,18 @@ namespace GestionePC
             return false;
         }
 
+        public bool isInLista(string barCode)
+        {
+            for (int i = 0; i < listaPC.Count; i++)
+            {
+                if (listaPC.ElementAt(i).getBarCode()==barCode)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         //elimina il pc 
         public void eliminaPC(CComputer pcDaEliminare)
         {
@@ -92,6 +104,18 @@ namespace GestionePC
                     listaPC.RemoveAt(i);
                 }
             }
+        }
+
+        public string GetPC(string barCode)
+        {
+            for (int i = 0; i < listaPC.Count; i++)
+            {
+                if (listaPC.ElementAt(i).getBarCode() == barCode)
+                {
+                    return listaPC.ElementAt(i).ToString();
+                }
+            }
+            return null;
         }
 
         //metodo per visualizzare un pc dato il barCode

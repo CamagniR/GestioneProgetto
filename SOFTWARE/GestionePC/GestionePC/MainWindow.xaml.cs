@@ -21,8 +21,8 @@ namespace GestionePC
     /// </summary>
     public partial class MainWindow : Window
     {
-        string credenziali="ADMIN";
-        string password = "Admin";
+        string credenziali="admin";
+        string password = "admin";
 
         CListaComputer magazzino;
         ListaPCinAula PCinAula;
@@ -47,7 +47,7 @@ namespace GestionePC
 
         private void BtnAccedi_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (txtNome.Text == "ADMIN" && txtPassword.Password == "Admin")
+            if (txtNome.Text == credenziali && txtPassword.Password == password)
             {
                 FinestraHome finestra = new FinestraHome(magazzino, PCinAula, pcNoleggio);
                 finestra.Show();

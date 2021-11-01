@@ -74,6 +74,32 @@ namespace GestionePC
             return false;
         }
 
+        public string GetNoleggio(string barCode)
+        {
+            for (int i = 0; i < listaNoleggi.Count; i++)
+            {
+                if (listaNoleggi.ElementAt(i).getPC().getBarCode() == barCode)
+                {
+                    return listaNoleggi.ElementAt(i).ToString();
+                }
+            }
+            return null;
+        }
+
+
+        public bool isInLista(string barCode)
+        {
+            for (int i = 0; i < listaNoleggi.Count; i++)
+            {
+                if (listaNoleggi.ElementAt(i).getPC().getBarCode() == barCode)
+                {
+                    return true;
+                }
+
+            }
+
+            return false;
+        }
 
         public string GetAllCsv()
         {

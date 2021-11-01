@@ -1,1 +1,0 @@
-BARCODE;modello pc;stato pc;data corrente;indirizzo;classe;aula

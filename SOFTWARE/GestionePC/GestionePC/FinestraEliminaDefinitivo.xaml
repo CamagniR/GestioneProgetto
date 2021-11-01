@@ -1,0 +1,15 @@
+﻿<Window x:Class="GestionePC.FinestraEliminaDefinitivo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePC"
+        mc:Ignorable="d"
+        Title="FinestraEliminaDefinitivo" Height="451.233" Width="433.835">
+    <Grid>
+        <TextBlock x:Name="txtBlock" Height="110" Margin="49,42,49,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button x:Name="btnBack" Content="ANNULLA" HorizontalAlignment="Left" Height="34" Margin="10,376,0,0" VerticalAlignment="Top" Width="77" Click="BtnBack_Click"/>
+        <Button x:Name="btnEliminaLista" Content="ELIMINA DALLA LISTA " Height="54" Margin="49,176,238,0" VerticalAlignment="Top" Click="BtnEliminaLista_Click"/>
+        <Button x:Name="btnEliminaTutto" Content="ELIMINA DEFINITIVAMENTE" HorizontalAlignment="Left" Height="54" Margin="227,176,0,0" VerticalAlignment="Top" Width="150" Click="BtnEliminaTutto_Click"/>
+    </Grid>
+</Window>

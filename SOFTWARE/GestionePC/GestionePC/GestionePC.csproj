@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FinestraEliminaDefinitivo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FinestraHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -97,6 +101,9 @@
     <Compile Include="CListaComputer.cs" />
     <Compile Include="FinestraElimina.xaml.cs">
       <DependentUpon>FinestraElimina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinestraEliminaDefinitivo.xaml.cs">
+      <DependentUpon>FinestraEliminaDefinitivo.xaml</DependentUpon>
     </Compile>
     <Compile Include="FinestraHome.xaml.cs">
       <DependentUpon>FinestraHome.xaml</DependentUpon>

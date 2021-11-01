@@ -49,9 +49,22 @@ namespace GestionePC
             string daEliminare = "";
             daEliminare = txtBarCode.Text;
 
-            magazzino2.eliminaConBarCode(daEliminare);
-            PCinAula2.eliminaConBarCode(daEliminare);
-            pcNoleggio2.eliminaConBarCode(daEliminare);
+            if (pcNoleggio2.isInLista(daEliminare)==true)
+            {
+                FinestraEliminaDefinitivo finestra = new FinestraEliminaDefinitivo(magazzino2, pcNoleggio2, daEliminare);
+                finestra.Show();
+            }
+            else if (PCinAula2.isInLista(daEliminare)==true)
+            {
+                FinestraEliminaDefinitivo finestra = new FinestraEliminaDefinitivo(magazzino2, PCinAula2, daEliminare);
+                finestra.Show();
+            }
+            else if (magazzino2.isInLista(daEliminare)==true)
+            {
+                FinestraEliminaDefinitivo finestra = new FinestraEliminaDefinitivo(magazzino2, daEliminare);
+                finestra.Show();
+            }
+
 
         }
     }
