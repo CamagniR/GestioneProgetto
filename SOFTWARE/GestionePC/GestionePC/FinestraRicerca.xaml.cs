@@ -42,5 +42,23 @@ namespace GestionePC
             finestra.Show();
             this.Hide();
         }
+
+        private void btnCerca_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtBancode.Text != "")
+            {
+                cerca();
+            }
+            else
+            {
+                MessageBox.Show("inserisci un barcode");
+            }
+        }
+
+        public void cerca()
+        {
+            string tmp=magazzino2.GetPC(txtBancode.Text);
+            string[] vett = tmp.Split(';');
+        }
     }
 }
