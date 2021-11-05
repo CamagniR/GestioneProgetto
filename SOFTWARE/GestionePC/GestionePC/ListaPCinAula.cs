@@ -65,7 +65,17 @@ namespace GestionePC
             }
             return false;
         }
-
+        public bool controlloPresenza2(CComputer pcCercato)//quando assegno un pc ad un docente bisogna controllare che non sia gia assegnato ad un aula
+        {
+            for (int i = 0; i < listaAula.Count; i++)
+            {
+                if (listaAula.ElementAt(i).getPC().getBarCode() == pcCercato.getBarCode())
+                {
+                    return true;//pc 
+                }
+            }
+            return false;
+        }
         public bool isInLista(string barCode)
         {
             for (int i = 0; i < listaAula.Count; i++)

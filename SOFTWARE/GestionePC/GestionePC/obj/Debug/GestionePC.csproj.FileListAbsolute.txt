@@ -116,3 +116,5 @@ C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO 
 C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraMagazzino.baml
 C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraEliminaDefinitivo.g.cs
 C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraEliminaDefinitivo.baml
+E:\LUCA\5^B\Gestione\Progetto pc magazzino\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraEliminaDefinitivo.g.cs
+E:\LUCA\5^B\Gestione\Progetto pc magazzino\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraEliminaDefinitivo.baml

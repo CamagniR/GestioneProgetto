@@ -50,14 +50,22 @@ namespace GestionePC
                 CComputer tmpPC = new CComputer(txtBar.Text, txtPc.Text, txtStat.Text);
                 CDocente tmpDocente = new CDocente(tmpPC, txtData.Text, txtNome.Text, txtCognome.Text, txtInsegnamento.Text);
                 
-                if(pcNoleggio2.controlloPresenza(tmpDocente))
+                if(pcNoleggio2.controlloPresenza(tmpDocente))//controlla se gia assegnato ad un professore
                 {
-                    MessageBox.Show("computer gia assegnato");
+                    MessageBox.Show("computer gia assegnato ad un professore");
+                    
+                }
+                if (PCinAula2.controlloPresenza2(tmpPC))//per assegnare un pc ad un prof deve controllare che non sia gia regisrato ad un aula 
+                {
+                    MessageBox.Show("computer gia assegnato ad un aula");
                 }
                 else
                 {
                     pcNoleggio2.aggiungiInLista(tmpDocente);
                     pcNoleggio2.Salva();
+                    magazzino2.registraPC(tmpPC);
+                    magazzino2.Salva();
+
                     MessageBox.Show("computer noleggiato ");
                 }
   
