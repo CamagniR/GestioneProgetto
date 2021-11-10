@@ -76,6 +76,8 @@ namespace GestionePC
             }
             return false;
         }
+
+
         public bool isInLista(string barCode)
         {
             for (int i = 0; i < listaAula.Count; i++)
@@ -113,6 +115,17 @@ namespace GestionePC
             return null;
         }
 
+        public CAula oggettoGetCAula(string barCode)
+        {
+            for (int i = 0; i < listaAula.Count; i++)
+            {
+                if (listaAula.ElementAt(i).getPC().getBarCode() == barCode)
+                {
+                    return listaAula.ElementAt(i);
+                }
+            }
+            return null;
+        }
         public string GetAllCsv()
         {
             string ritorno = "";

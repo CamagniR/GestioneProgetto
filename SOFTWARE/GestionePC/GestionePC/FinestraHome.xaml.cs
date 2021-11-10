@@ -39,6 +39,15 @@ namespace GestionePC
 
         }
 
+        public FinestraHome(CListaComputer magazzino2, ListaPCinAula aula2 )
+        {
+
+            InitializeComponent();
+            this.magazzino2 = magazzino2;
+            this.PCinAula2 = aula2;
+
+        }
+
         private void btnRegistra_Click(object sender, RoutedEventArgs e)
         {
             FinestraRegistra finestra = new FinestraRegistra(magazzino2, PCinAula2, pcNoleggio2);

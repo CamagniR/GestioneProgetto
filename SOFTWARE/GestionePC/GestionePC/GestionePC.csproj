@@ -67,6 +67,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FinestraInAula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FinestraNoleggiaProf.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -107,6 +111,9 @@
     </Compile>
     <Compile Include="FinestraHome.xaml.cs">
       <DependentUpon>FinestraHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinestraInAula.xaml.cs">
+      <DependentUpon>FinestraInAula.xaml</DependentUpon>
     </Compile>
     <Compile Include="FinestraNoleggiaProf.xaml.cs">
       <DependentUpon>FinestraNoleggiaProf.xaml</DependentUpon>

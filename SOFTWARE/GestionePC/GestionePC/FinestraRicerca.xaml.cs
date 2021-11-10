@@ -45,20 +45,32 @@ namespace GestionePC
 
         private void btnCerca_Click(object sender, RoutedEventArgs e)
         {
-            if (txtBancode.Text != "")
-            {
-                cerca();
-            }
-            else
+            string barCode = "";
+            barCode = txtBancode.Text;
+            if (txtBancode.Text == "")
             {
                 MessageBox.Show("inserisci un barcode");
+                
             }
+
+            if (PCinAula2.isInLista(barCode) == true)
+            {
+                txtBancode.Text = "";
+                FinestraInAula finestra = new FinestraInAula(magazzino2, PCinAula2,barCode);
+                finestra.Show();
+                this.Hide();
+            }
+            else if (pcNoleggio2.isInLista(barCode) == true)
+            {
+                txtBancode.Text = "";
+            }
+            else if (magazzino2.isInLista(barCode) == true)
+            {
+                txtBancode.Text = "";
+            }
+
         }
 
-        public void cerca()
-        {
-            string tmp=magazzino2.GetPC(txtBancode.Text);
-            string[] vett = tmp.Split(';');
-        }
+      
     }
 }
