@@ -55,22 +55,62 @@ namespace GestionePC
 
             if (PCinAula2.isInLista(barCode) == true)
             {
+                CAula tmp = new CAula();
+                CComputer temp = new CComputer();
+                tmp = PCinAula2.oggettoGetCAula(barCode);
+                temp = tmp.getPC();
+
+                enable();
+
+                txtBarCode.Text = temp.getBarCode();
+                txtModello.Text = temp.getModello();
+                txtStato.Text = temp.getSpecifiche();
+                txtData.Text = tmp.getDataRegsitro();
+                txtIndirizzo.Text = tmp.getIndirizzo();
+                txtClasse.Text = tmp.getClasse();
+                txtAula.Text = tmp.getAula();
                 txtBancode.Text = "";
-                FinestraInAula finestra = new FinestraInAula(magazzino2, PCinAula2,barCode);
-                finestra.Show();
-                this.Hide();
+                
             }
             else if (pcNoleggio2.isInLista(barCode) == true)
             {
+                CDocente tmp = new CDocente();
+                CComputer temp = new CComputer();
+                tmp = pcNoleggio2.oggettoGetCDocente(barCode);
+                temp = tmp.getPC();
+
+                enable();
+
+                txtBarCode.Text = temp.getBarCode();
+                txtModello.Text = temp.getModello();
+                txtStato.Text = temp.getSpecifiche();
+                txtInsegna.Text = tmp.getIndirizzi();
+                txtNome.Text = tmp.getNome();
+                txtCognome.Text = tmp.getCognome();
                 txtBancode.Text = "";
             }
             else if (magazzino2.isInLista(barCode) == true)
             {
+                enable();
                 txtBancode.Text = "";
             }
 
         }
 
-      
+        public void enable()
+        {
+            txtAula.IsEnabled = true;
+            txtBarCode.IsEnabled = true;
+            txtModello.IsEnabled = true;
+            txtStato.IsEnabled = true;
+            txtData.IsEnabled = true;
+            txtIndirizzo.IsEnabled = true;
+            txtClasse.IsEnabled = true;
+        }
+
+        private void btnModifica_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -7,10 +7,23 @@
         mc:Ignorable="d"
         Title="FinestraRicerca" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtBancode" HorizontalAlignment="Left" Height="24" Margin="197,54,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Inserire il ban code" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="169"/>
-        <Button x:Name="btnCerca" Content="Ricerca" HorizontalAlignment="Left" Margin="653,285,0,0" VerticalAlignment="Top" Width="91" Height="39" Click="btnCerca_Click"/>
+        <TextBox x:Name="txtBancode" HorizontalAlignment="Left" Height="24" Margin="197,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Inserire il barcode" HorizontalAlignment="Left" Margin="84,50,0,0" VerticalAlignment="Top" Width="113"/>
+        <Button x:Name="btnCerca" Content="Ricerca" HorizontalAlignment="Left" Margin="369,54,0,0" VerticalAlignment="Top" Width="60" Height="24" Click="btnCerca_Click"/>
         <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="69,391,0,0" VerticalAlignment="Top" Width="75" Click="btnHome_Click"/>
+        <TextBox x:Name="txtBarCode" HorizontalAlignment="Left" Height="34" Margin="102,136,0,0" TextWrapping="Wrap" Text="BarCode" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
+        <TextBox x:Name="txtModello" HorizontalAlignment="Left" Height="34" Margin="248,136,0,0" TextWrapping="Wrap" Text="Modello" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
+        <TextBox x:Name="txtStato" HorizontalAlignment="Left" Height="34" Margin="398,136,0,0" TextWrapping="Wrap" Text="Stato" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
+        <TextBox x:Name="txtData" HorizontalAlignment="Left" Height="34" Margin="103,200,0,0" TextWrapping="Wrap" Text="data" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
+        <TextBox x:Name="txtIndirizzo" HorizontalAlignment="Left" Height="34" Margin="249,200,0,0" TextWrapping="Wrap" Text="indirizzo classe" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
+        <TextBox x:Name="txtClasse" HorizontalAlignment="Left" Height="34" Margin="399,200,0,0" TextWrapping="Wrap" Text="classe" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
+        <TextBox x:Name="txtAula" HorizontalAlignment="Left" Height="34" Margin="554,200,0,0" TextWrapping="Wrap" Text="aula" VerticalAlignment="Top" Width="121" RenderTransformOrigin="1.067,2.431" IsEnabled="False"/>
+        <Button x:Name="btnModifica" Content="modifica" HorizontalAlignment="Left" Height="37" Margin="684,356,0,0" VerticalAlignment="Top" Width="65" IsEnabled="False" Click="btnModifica_Click"/>
+        <TextBox x:Name="txtInsegna" HorizontalAlignment="Left" Height="34" Margin="103,267,0,0" TextWrapping="Wrap" Text="indirizzo insegnamento" VerticalAlignment="Top" Width="121" RenderTransformOrigin="1.067,2.431" IsEnabled="False"/>
+        <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="34" Margin="400,267,0,0" TextWrapping="Wrap" Text="cognome" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="34" Margin="250,267,0,0" TextWrapping="Wrap" Text="nome" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,200,0,0" TextWrapping="Wrap" Text="classe" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,267,0,0" TextWrapping="Wrap" Text="prof" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

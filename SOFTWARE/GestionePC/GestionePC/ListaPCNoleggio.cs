@@ -86,6 +86,18 @@ namespace GestionePC
             return null;
         }
 
+        public CDocente oggettoGetCDocente(string barCode)
+        {
+            for (int i = 0; i < listaNoleggi.Count; i++)
+            {
+                if (listaNoleggi.ElementAt(i).getPC().getBarCode() == barCode)
+                {
+                    return listaNoleggi.ElementAt(i);
+                }
+            }
+            return null;
+        }
+
 
         public bool isInLista(string barCode)
         {
