@@ -1,3 +1,0 @@
-b;TextBox;TextBox;TextBox;TextBox;TextBox;TextBox
-ab;lenovo;funge;08/08/2021;N1;C1;meccanico
-123;TextBox;TextBox;TextBox;TextBox;TextBox;TextBox

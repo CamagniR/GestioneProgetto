@@ -1,4 +1,0 @@
-b;b;b
-abcde;asus;funge
-ab;lenovo;funge
-123;TextBox;TextBox
