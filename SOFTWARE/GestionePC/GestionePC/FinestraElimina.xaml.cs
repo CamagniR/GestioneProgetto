@@ -53,16 +53,19 @@ namespace GestionePC
             {
                 FinestraEliminaDefinitivo finestra = new FinestraEliminaDefinitivo(magazzino2, pcNoleggio2, daEliminare);
                 finestra.Show();
+                this.Hide();
             }
             else if (PCinAula2.isInLista(daEliminare)==true)
             {
                 FinestraEliminaDefinitivo finestra = new FinestraEliminaDefinitivo(magazzino2, PCinAula2, daEliminare);
                 finestra.Show();
+                this.Hide();
             }
             else if (magazzino2.isInLista(daEliminare)==true)
             {
                 FinestraEliminaDefinitivo finestra = new FinestraEliminaDefinitivo(magazzino2, daEliminare);
                 finestra.Show();
+                this.Hide();
             }
 
 
