@@ -52,15 +52,14 @@ namespace GestionePC
                 MessageBox.Show("inserisci un barcode");
                 
             }
-
-            if (PCinAula2.isInLista(barCode) == true)
+            else if (PCinAula2.isInLista(barCode) == true)
             {
                 CAula tmp = new CAula();
                 CComputer temp = new CComputer();
                 tmp = PCinAula2.oggettoGetCAula(barCode);
                 temp = tmp.getPC();
 
-                enable();
+             
 
                 txtBarCode.Text = temp.getBarCode();
                 txtModello.Text = temp.getModello();
@@ -70,6 +69,7 @@ namespace GestionePC
                 txtClasse.Text = tmp.getClasse();
                 txtAula.Text = tmp.getAula();
                 txtBancode.Text = "";
+                btnModifica.IsEnabled = true;
                 
             }
             else if (pcNoleggio2.isInLista(barCode) == true)
@@ -79,25 +79,38 @@ namespace GestionePC
                 tmp = pcNoleggio2.oggettoGetCDocente(barCode);
                 temp = tmp.getPC();
 
-                enable();
-
+                
                 txtBarCode.Text = temp.getBarCode();
                 txtModello.Text = temp.getModello();
                 txtStato.Text = temp.getSpecifiche();
+                txtDataProf.Text = tmp.getDataRegistro();
                 txtInsegna.Text = tmp.getIndirizzi();
                 txtNome.Text = tmp.getNome();
                 txtCognome.Text = tmp.getCognome();
+                btnCerca.IsEnabled = true;
                 txtBancode.Text = "";
+                btnModifica.IsEnabled = true;
+
             }
             else if (magazzino2.isInLista(barCode) == true)
             {
-                enable();
+                CComputer tmp = new CComputer();
+                tmp = magazzino2.oggettoGetMagazzino(barCode);
+
+
+                txtBarCode.Text = tmp.getBarCode();
+                txtModello.Text = tmp.getModello();
+                txtStato.Text = tmp.getSpecifiche();
+                btnCerca.IsEnabled = true;
                 txtBancode.Text = "";
+                btnModifica.IsEnabled = true;
+
             }
 
         }
 
-        public void enable()
+
+        private void btnModifica_Click(object sender, RoutedEventArgs e)
         {
             txtAula.IsEnabled = true;
             txtBarCode.IsEnabled = true;
@@ -106,9 +119,12 @@ namespace GestionePC
             txtData.IsEnabled = true;
             txtIndirizzo.IsEnabled = true;
             txtClasse.IsEnabled = true;
+            txtInsegna.IsEnabled = true;
+            txtNome.IsEnabled = true;
+            txtCognome.IsEnabled = true;
         }
 
-        private void btnModifica_Click(object sender, RoutedEventArgs e)
+        private void btnSalva_Click(object sender, RoutedEventArgs e)
         {
 
         }

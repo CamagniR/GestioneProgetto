@@ -160,7 +160,17 @@ namespace GestionePC
         }
 
 
-
+        public CComputer oggettoGetMagazzino(string barCode)
+        {
+            for (int i = 0; i < listaPC.Count; i++)
+            {
+                if (listaPC.ElementAt(i).getBarCode() == barCode)
+                {
+                    return listaPC.ElementAt(i);
+                }
+            }
+            return null;
+        }
 
 
     }
