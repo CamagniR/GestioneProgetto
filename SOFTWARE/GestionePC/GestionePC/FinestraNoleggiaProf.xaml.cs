@@ -54,10 +54,12 @@ namespace GestionePC
                 {
                     MessageBox.Show("computer gia assegnato ad un professore");
                     
+
                 }
                 if (PCinAula2.controlloPresenza2(tmpPC))//per assegnare un pc ad un prof deve controllare che non sia gia regisrato ad un aula 
                 {
                     MessageBox.Show("computer gia assegnato ad un aula");
+                    
                 }
                 else
                 {
@@ -101,16 +103,19 @@ namespace GestionePC
             else if (PCinAula2.isInLista(bar) == true)
             {
                 MessageBox.Show("PC già aseeganto in un aula");
+                btnNoleggia.IsEnabled = false;
             }
             else if (pcNoleggio2.isInLista(bar) == true)
             {
                 MessageBox.Show("PC assegnato ad un docente");
+                btnNoleggia.IsEnabled = false;
             }
 
             else {
 
                 txtPc.IsEnabled = true;
                 txtStat.IsEnabled = true;
+                btnNoleggia.IsEnabled = true;
             }
 
 
@@ -119,6 +124,13 @@ namespace GestionePC
 
 
 
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraRegistra finestra = new FinestraRegistra(magazzino2, PCinAula2, pcNoleggio2);
+            finestra.Show();
+            this.Hide();
         }
     }
 }

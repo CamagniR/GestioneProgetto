@@ -1,3 +1,6 @@
-X000KXCJ3B;asus;nero
 90028728;riccardo;camagni
 aaaa;aaaa;aaaa
+abba;asus;gg
+lalla;apple;gg
+po;gg;gg
+dasd;ada;d

@@ -68,5 +68,45 @@ namespace GestionePC
                 MessageBox.Show("compilare tutti i campi");
             }
         }
+
+        private void TxtBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string bar = txtBar.Text;
+
+            if (magazzino2.isInLista(bar) == true && PCinAula2.isInLista(bar) == false && pcNoleggio2.isInLista(bar) == false)
+            {
+                CComputer tmp = new CComputer();
+                tmp = magazzino2.visualizzaPC(bar);
+                txtPc.Text = tmp.getModello();
+                txtStat.Text = tmp.getSpecifiche();
+
+
+            }
+            else if (PCinAula2.isInLista(bar) == true)
+            {
+                MessageBox.Show("PC già aseeganto in un aula");
+                btnRegistra.IsEnabled = false;
+            }
+            else if (pcNoleggio2.isInLista(bar) == true)
+            {
+                MessageBox.Show("PC assegnato ad un docente");
+                btnRegistra.IsEnabled = false;
+            }
+
+            else
+            {
+
+                txtPc.IsEnabled = true;
+                txtStat.IsEnabled = true;
+                btnRegistra.IsEnabled = true;
+            }
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraRegistra finestra = new FinestraRegistra(magazzino2, PCinAula2, pcNoleggio2);
+            finestra.Show();
+            this.Hide();
+        }
     }
 }

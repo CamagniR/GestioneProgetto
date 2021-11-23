@@ -23,6 +23,7 @@
         <TextBox x:Name="txtPc" HorizontalAlignment="Left" Height="23" Margin="205,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
         <TextBox x:Name="txtInsegnamento" HorizontalAlignment="Left" Height="23" Margin="66,333,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnNoleggia" Content="noleggia" HorizontalAlignment="Left" Margin="554,389,0,0" VerticalAlignment="Top" Width="75" Click="btnNoleggia_Click"/>
+        <Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Height="20" Margin="413,389,0,0" VerticalAlignment="Top" Width="77" Click="BtnBack_Click"/>
 
     </Grid>
 </Window>

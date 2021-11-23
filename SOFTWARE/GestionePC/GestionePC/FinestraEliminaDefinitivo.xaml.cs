@@ -58,7 +58,7 @@ namespace GestionePC
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-            FinestraElimina finestra = new FinestraElimina();
+            FinestraElimina finestra = new FinestraElimina( magazzino2, PCinAula2,  pcNoleggio2);
             finestra.Show();
             this.Hide();
         }
@@ -99,6 +99,13 @@ namespace GestionePC
                 magazzino2.Salva();
                 txtBlock.Text = "";
             }
+        }
+
+        private void BtnAnnulla_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraElimina finestra = new FinestraElimina();
+            finestra.Show();
+            this.Hide();
         }
     }
 }

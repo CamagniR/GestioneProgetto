@@ -63,5 +63,12 @@ namespace GestionePC
                 MessageBox.Show("compilare tutti i campi");
             }
         }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraRegistra finestra = new FinestraRegistra(magazzino2, PCinAula2, pcNoleggio2);
+            finestra.Show();
+            this.Hide();
+        }
     }
 }

@@ -131,7 +131,7 @@ namespace GestionePC
             string ritorno = "";
             for (int i = 0; i < listaAula.Count(); i++)
             {
-                if (i != listaAula.Count() - 1) ritorno += listaAula.ElementAt(i).ToCSV() + "\n";
+                if (i != listaAula.Count() - 1) ritorno += listaAula.ElementAt(i).ToCSV()+"\n";
                 else ritorno += listaAula.ElementAt(i).ToCSV();
             }
             return ritorno;
