@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionePC"
         mc:Ignorable="d"
-        Title="FinestraRegistra" Height="450" Width="800">
+        Title="FinestraRegistra" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Button x:Name="btnNoleggiaProf" Content="Noleggia Ad Un Prof" HorizontalAlignment="Left" Margin="83,115,0,0" VerticalAlignment="Top" Width="145" Height="78" Click="btnNoleggiaProf_Click"/>
         <Button x:Name="btnRegistraAula" Content="Registra in un aula" HorizontalAlignment="Left" Margin="300,115,0,0" VerticalAlignment="Top" Width="145" Height="78" Click="btnRegistraAula_Click"/>

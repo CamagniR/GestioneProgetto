@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionePC"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="sfondo.jpg" Opacity="0.35"/>
+        </Grid.Background>
         <Image x:Name="Logo" Height="116" Margin="228,10,228.333,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNome" Height="36" Margin="303,212,303.333,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="303,181,0,0" VerticalAlignment="Top" Width="66"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="303,274,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button x:Name="btnAccedi" Content="ACCEDI" HorizontalAlignment="Left" Margin="637,353,0,0" VerticalAlignment="Top" Width="110" Height="42" MouseDoubleClick="BtnAccedi_MouseDoubleClick"/>
+        <TextBox x:Name="txtNome" Height="36" Margin="303,212,303.333,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="txtNome_TextChanged" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
+        <Label Content="Nome" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="303,181,0,0" VerticalAlignment="Top" Width="186" FontWeight="Bold" Foreground="Black" FontSize="14" FontFamily="Yu Gothic UI Semibold"/>
+        <Label Content="Password" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="303,274,0,0" VerticalAlignment="Top" Width="186" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
+        <Button x:Name="btnAccedi" Content="ACCEDI" HorizontalAlignment="Left" Margin="637,353,0,0" VerticalAlignment="Top" Width="110" Height="42" MouseDoubleClick="BtnAccedi_MouseDoubleClick" IsEnabled="False" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
         <Image Margin="203,10,203,293" Source="logo_small.png" Stretch="Fill"/>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Height="36" Margin="303,305,0,0" VerticalAlignment="Top" Width="186" RenderTransformOrigin="1.856,0.717"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Height="36" Margin="303,305,0,0" VerticalAlignment="Top" Width="186" RenderTransformOrigin="1.856,0.717" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
 
     </Grid>
 </Window>

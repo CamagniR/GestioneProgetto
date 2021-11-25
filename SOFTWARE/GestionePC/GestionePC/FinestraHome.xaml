@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionePC"
         mc:Ignorable="d"
-        Title="FinestraHome" Height="450" Width="800">
+        Title="FinestraHome" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Button x:Name="btnRegistra" Content="Registra" HorizontalAlignment="Left" Margin="83,175,0,0" VerticalAlignment="Top" Width="167" Height="71" Click="btnRegistra_Click"/>
         <Button x:Name="btnBancode" Content="Tasto  ricerca per bancode" HorizontalAlignment="Left" Margin="327,175,0,0" VerticalAlignment="Top" Width="167" Height="71" Click="btnBancode_Click"/>

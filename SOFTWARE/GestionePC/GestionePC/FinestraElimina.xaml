@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionePC"
         mc:Ignorable="d"
-        Title="FinestraElimina" Height="450" Width="800">
+        Title="FinestraElimina" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="93,362,0,0" VerticalAlignment="Top" Width="89" Click="btnHome_Click" Height="29"/>
         <Label Content="FINESTRA ELIMINA" HorizontalAlignment="Left" Margin="500,22,0,0" VerticalAlignment="Top" Height="61" Width="222"/>

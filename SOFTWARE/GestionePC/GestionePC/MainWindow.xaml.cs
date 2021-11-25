@@ -64,5 +64,15 @@ namespace GestionePC
 
 
         }
+
+        private void txtNome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(txtNome.Text != "")
+            {
+
+                btnAccedi.IsEnabled = true;
+
+            }
+        }
     }
 }

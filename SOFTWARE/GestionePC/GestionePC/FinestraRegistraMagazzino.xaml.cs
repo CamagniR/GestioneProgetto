@@ -70,5 +70,32 @@ namespace GestionePC
             finestra.Show();
             this.Hide();
         }
+
+        private void txtBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(txtBar.Text !="" && txtStat.Text != "" && txtPc.Text != "")
+            {
+                btnRegistra.IsEnabled = true;
+
+            }
+        }
+
+        private void txtPc_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtBar.Text != "" && txtStat.Text != "" && txtPc.Text != "")
+            {
+                btnRegistra.IsEnabled = true;
+
+            }
+        }
+
+        private void txtStat_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtBar.Text != "" && txtStat.Text != "" && txtPc.Text != "")
+            {
+                btnRegistra.IsEnabled = true;
+
+            }
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionePC"
         mc:Ignorable="d"
-        Title="FinestraEliminaDefinitivo" Height="451.233" Width="433.835">
+        Title="FinestraEliminaDefinitivo" Height="451.233" Width="433.835" ResizeMode="NoResize">
     <Grid>
         <TextBlock x:Name="txtBlock" Height="110" Margin="49,42,49,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Height="34" Margin="339,376,0,0" VerticalAlignment="Top" Width="77" Click="BtnBack_Click"/>
