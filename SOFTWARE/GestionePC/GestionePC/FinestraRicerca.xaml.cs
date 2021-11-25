@@ -111,22 +111,63 @@ namespace GestionePC
 
 
         private void btnModifica_Click(object sender, RoutedEventArgs e)
-        {
-            txtAula.IsEnabled = true;
+        {          
             txtBarCode.IsEnabled = true;
             txtModello.IsEnabled = true;
             txtStato.IsEnabled = true;
-            txtData.IsEnabled = true;
-            txtIndirizzo.IsEnabled = true;
-            txtClasse.IsEnabled = true;
-            txtInsegna.IsEnabled = true;
-            txtNome.IsEnabled = true;
-            txtCognome.IsEnabled = true;
+            btnSalva.IsEnabled = true;
         }
 
         private void btnSalva_Click(object sender, RoutedEventArgs e)
         {
+            if (txtData.IsEnabled)
+            {
+                
+            }
+            else if (txtDataProf.IsEnabled)
+            {
+                
+            }
+            else
+            {
+                
+            }
+        }
 
+        private void modMag_Click(object sender, RoutedEventArgs e)
+        {
+            txtAula.IsEnabled = false;
+            txtData.IsEnabled = false;
+            txtIndirizzo.IsEnabled = false;
+            txtClasse.IsEnabled = false;
+            txtDataProf.IsEnabled = false;
+            txtInsegna.IsEnabled = false;
+            txtNome.IsEnabled = false;
+            txtCognome.IsEnabled = false;
+        }
+
+        private void modCla_Click(object sender, RoutedEventArgs e)
+        {
+            txtAula.IsEnabled = true;
+            txtData.IsEnabled = true;
+            txtIndirizzo.IsEnabled = true;
+            txtClasse.IsEnabled = true;
+            txtDataProf.IsEnabled = false;
+            txtInsegna.IsEnabled = false;
+            txtNome.IsEnabled = false;
+            txtCognome.IsEnabled = false;
+        }
+
+        private void ModProf_Click(object sender, RoutedEventArgs e)
+        {
+            txtDataProf.IsEnabled = true;
+            txtInsegna.IsEnabled = true;
+            txtNome.IsEnabled = true;
+            txtCognome.IsEnabled = true;
+            txtAula.IsEnabled = false;
+            txtData.IsEnabled = false;
+            txtIndirizzo.IsEnabled = false;
+            txtClasse.IsEnabled = false;
         }
     }
 }

@@ -25,7 +25,10 @@
         <TextBlock HorizontalAlignment="Left" Margin="30,200,0,0" TextWrapping="Wrap" Text="classe" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,267,0,0" TextWrapping="Wrap" Text="prof" VerticalAlignment="Top"/>
         <TextBox x:Name="txtDataProf" HorizontalAlignment="Left" Height="34" Margin="103,269,0,0" TextWrapping="Wrap" Text="data" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
-        <Button x:Name="btnSalva" Content="salva" HorizontalAlignment="Left" Margin="585,356,0,0" VerticalAlignment="Top" Width="75" Height="37" Click="btnSalva_Click"/>
+        <Button x:Name="btnSalva" Content="salva" HorizontalAlignment="Left" Margin="585,356,0,0" VerticalAlignment="Top" Width="75" Height="37" Click="btnSalva_Click" IsEnabled="False"/>
+        <Button x:Name="ModProf" Content="" HorizontalAlignment="Left" Margin="700,272,0,0" VerticalAlignment="Top" Width="20" Click="ModProf_Click" IsEnabled="False"/>
+        <Button x:Name="modMag" Content="" HorizontalAlignment="Left" Margin="700,141,0,0" VerticalAlignment="Top" Width="20" Click="modMag_Click" IsEnabled="False"/>
+        <Button x:Name="modCla" Content="" HorizontalAlignment="Left" Margin="700,207,0,0" VerticalAlignment="Top" Width="20" Click="modCla_Click" IsEnabled="False"/>
 
     </Grid>
 </Window>
