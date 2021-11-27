@@ -22,11 +22,15 @@ namespace GestionePC
         CListaComputer magazzino2;
         ListaPCinAula PCinAula2;
         ListaPCNoleggio pcNoleggio2;
+        int selezionato = 0;
+        int destinazione = 0;
+        string barCode="";
 
         public FinestraRicerca()
         {
             InitializeComponent();
         }
+
         public FinestraRicerca(CListaComputer magazzino2, ListaPCinAula aula2, ListaPCNoleggio docenti2)
         {
 
@@ -45,65 +49,64 @@ namespace GestionePC
 
         private void btnCerca_Click(object sender, RoutedEventArgs e)
         {
-            string barCode = "";
             barCode = txtBancode.Text;
             if (txtBancode.Text == "")
             {
                 MessageBox.Show("inserisci un barcode");
-                
+
             }
-            else if (PCinAula2.isInLista(barCode) == true)
+            else
             {
-                CAula tmp = new CAula();
                 CComputer temp = new CComputer();
-                tmp = PCinAula2.oggettoGetCAula(barCode);
-                temp = tmp.getPC();
+                if (PCinAula2.isInLista(barCode) == true)
+                {
+                    CAula tmp = new CAula();
+                    
+                    tmp = PCinAula2.oggettoGetCAula(barCode);
+                    temp = tmp.getPC();
 
-             
+                    txtBarCode.Text = temp.getBarCode();
+                    txtModello.Text = temp.getModello();
+                    txtStato.Text = temp.getSpecifiche();
+                    txtData.Text = tmp.getDataRegsitro();
+                    txtIndirizzo.Text = tmp.getIndirizzo();
+                    txtClasse.Text = tmp.getClasse();
+                    txtAula.Text = tmp.getAula();
+                    txtBancode.Text = "";
+                    btnModifica.IsEnabled = true;
+                    selezionato = 2;
 
-                txtBarCode.Text = temp.getBarCode();
-                txtModello.Text = temp.getModello();
-                txtStato.Text = temp.getSpecifiche();
-                txtData.Text = tmp.getDataRegsitro();
-                txtIndirizzo.Text = tmp.getIndirizzo();
-                txtClasse.Text = tmp.getClasse();
-                txtAula.Text = tmp.getAula();
-                txtBancode.Text = "";
-                btnModifica.IsEnabled = true;
-                
-            }
-            else if (pcNoleggio2.isInLista(barCode) == true)
-            {
-                CDocente tmp = new CDocente();
-                CComputer temp = new CComputer();
-                tmp = pcNoleggio2.oggettoGetCDocente(barCode);
-                temp = tmp.getPC();
+                }
+                else if (pcNoleggio2.isInLista(barCode) == true)
+                {
+                    CDocente tmp = new CDocente();
+                    tmp = pcNoleggio2.oggettoGetCDocente(barCode);
+                    temp = tmp.getPC();
 
-                
-                txtBarCode.Text = temp.getBarCode();
-                txtModello.Text = temp.getModello();
-                txtStato.Text = temp.getSpecifiche();
-                txtDataProf.Text = tmp.getDataRegistro();
-                txtInsegna.Text = tmp.getIndirizzi();
-                txtNome.Text = tmp.getNome();
-                txtCognome.Text = tmp.getCognome();
-                btnCerca.IsEnabled = true;
-                txtBancode.Text = "";
-                btnModifica.IsEnabled = true;
+                    txtBarCode.Text = temp.getBarCode();
+                    txtModello.Text = temp.getModello();
+                    txtStato.Text = temp.getSpecifiche();
+                    txtDataProf.Text = tmp.getDataRegistro();
+                    txtInsegna.Text = tmp.getIndirizzi();
+                    txtNome.Text = tmp.getNome();
+                    txtCognome.Text = tmp.getCognome();
+                    btnCerca.IsEnabled = true;
+                    txtBancode.Text = "";
+                    btnModifica.IsEnabled = true;
+                    selezionato = 3;
+                }
+                else if (magazzino2.isInLista(barCode) == true)
+                {
+                    temp = magazzino2.oggettoGetMagazzino(barCode);
 
-            }
-            else if (magazzino2.isInLista(barCode) == true)
-            {
-                CComputer tmp = new CComputer();
-                tmp = magazzino2.oggettoGetMagazzino(barCode);
-
-
-                txtBarCode.Text = tmp.getBarCode();
-                txtModello.Text = tmp.getModello();
-                txtStato.Text = tmp.getSpecifiche();
-                btnCerca.IsEnabled = true;
-                txtBancode.Text = "";
-                btnModifica.IsEnabled = true;
+                    txtBarCode.Text = temp.getBarCode();
+                    txtModello.Text = temp.getModello();
+                    txtStato.Text = temp.getSpecifiche();
+                    btnCerca.IsEnabled = true;
+                    txtBancode.Text = "";
+                    btnModifica.IsEnabled = true;
+                    selezionato = 1;
+                }
 
             }
 
@@ -120,18 +123,38 @@ namespace GestionePC
 
         private void btnSalva_Click(object sender, RoutedEventArgs e)
         {
-            if (txtData.IsEnabled)
+            if (selezionato == 1)
             {
-                
+                magazzino2.eliminaConBarCode(barCode);
             }
-            else if (txtDataProf.IsEnabled)
+            else if (selezionato == 2)
             {
-                
+                PCinAula2.eliminaConBarCode(barCode);
             }
             else
             {
-                
+                pcNoleggio2.eliminaConBarCode(barCode);
             }
+
+            CComputer temp = new CComputer(barCode, txtModello.Text, txtStato.Text);
+            if (destinazione == 1)
+            {
+                magazzino2.registraPC(temp);
+                magazzino2.Salva();
+            }
+            else if (destinazione == 2)
+            {
+                CAula tmp = new CAula(temp,txtData.Text,txtIndirizzo.Text,txtClasse.Text,txtAula.Text);
+                PCinAula2.aggiungiInLista(tmp);
+                PCinAula2.Salva();
+            }
+            else
+            {
+                CDocente tmp = new CDocente(temp,txtDataProf.Text,txtNome.Text,txtCognome.Text,txtInsegna.Text);
+                pcNoleggio2.aggiungiInLista(tmp);
+                pcNoleggio2.Salva();
+            }
+
         }
 
         private void modMag_Click(object sender, RoutedEventArgs e)
@@ -144,6 +167,7 @@ namespace GestionePC
             txtInsegna.IsEnabled = false;
             txtNome.IsEnabled = false;
             txtCognome.IsEnabled = false;
+            destinazione = 1;
         }
 
         private void modCla_Click(object sender, RoutedEventArgs e)
@@ -156,6 +180,7 @@ namespace GestionePC
             txtInsegna.IsEnabled = false;
             txtNome.IsEnabled = false;
             txtCognome.IsEnabled = false;
+            destinazione = 2;
         }
 
         private void ModProf_Click(object sender, RoutedEventArgs e)
@@ -168,6 +193,7 @@ namespace GestionePC
             txtData.IsEnabled = false;
             txtIndirizzo.IsEnabled = false;
             txtClasse.IsEnabled = false;
+            destinazione = 3;
         }
     }
 }
