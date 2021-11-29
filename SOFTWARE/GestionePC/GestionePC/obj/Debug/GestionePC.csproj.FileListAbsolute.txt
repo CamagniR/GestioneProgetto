@@ -29,3 +29,34 @@ E:\GINO\gestione\GestioneProgetto\SOFTWARE\GestionePC\GestionePC\obj\Debug\Gesti
 E:\GINO\gestione\GestioneProgetto\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.csproj.CoreCompileInputs.cache
 E:\GINO\gestione\GestioneProgetto\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.exe
 E:\GINO\gestione\GestioneProgetto\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.pdb
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\bin\Debug\GestionePC.exe.config
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\bin\Debug\GestionePC.exe
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\bin\Debug\GestionePC.pdb
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.csprojAssemblyReference.cache
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraElimina.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraEliminaDefinitivo.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraHome.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraNoleggiaProf.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistra.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraAula.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraMagazzino.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRicerca.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\MainWindow.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\App.g.cs
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC_MarkupCompile.cache
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC_MarkupCompile.lref
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraElimina.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraEliminaDefinitivo.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraHome.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraNoleggiaProf.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistra.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraAula.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRegistraMagazzino.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\FinestraRicerca.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\MainWindow.baml
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.g.resources
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.Properties.Resources.resources
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.csproj.GenerateResource.cache
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.csproj.CoreCompileInputs.cache
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.exe
+C:\Users\Riccardo\Desktop\SCUOLA\GESTIONE PROGETTO\GESTIONE AZIENDA DI NOLEGGIO PC.docx\SOFTWARE\GestionePC\GestionePC\obj\Debug\GestionePC.pdb
