@@ -44,7 +44,7 @@ namespace GestionePC
 
         private void btnRegistra_Click(object sender, RoutedEventArgs e)
         {
-            if (txtBar.Text != "" && txtPc.Text != "" && txtData.Text != "" && txtIndirizzo.Text != "" && txtClasse.Text != "" && txtAula.Text !="")
+            if (txtBar.Text != "" && txtPc.Text != "" && txtData.Text != "" && txtIndirizzo.Text != "" && txtClasse.Text != "" && txtAula.Text != "")
             {
                 CComputer tmp = new CComputer(txtBar.Text, txtPc.Text, txtStat.Text);
                 CAula temp = new CAula(tmp, txtData.Text, txtIndirizzo.Text, txtClasse.Text, txtAula.Text);
@@ -54,13 +54,8 @@ namespace GestionePC
                 magazzino2.Salva();
                 MessageBox.Show("computer registrato correttamente");
 
-                txtBar.Text = "";
-                txtPc.Text = "";
-                txtStat.Text = "";
-                txtData.Text = "";
-                txtIndirizzo.Text = "";
-                txtClasse.Text = "";
-                txtAula.Text = "";
+                Clear();
+
 
             }
             else
@@ -107,6 +102,18 @@ namespace GestionePC
             FinestraRegistra finestra = new FinestraRegistra(magazzino2, PCinAula2, pcNoleggio2);
             finestra.Show();
             this.Hide();
+        }
+        void Clear()
+        {
+
+            txtBar.Text = "";
+            txtPc.Text = "";
+            txtStat.Text = "";
+            txtData.Text = "";
+            txtIndirizzo.Text = "";
+            txtClasse.Text = "";
+            txtAula.Text = "";
+
         }
     }
 }

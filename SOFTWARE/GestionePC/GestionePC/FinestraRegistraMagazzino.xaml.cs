@@ -44,7 +44,7 @@ namespace GestionePC
 
         private void btnRegistra_Click(object sender, RoutedEventArgs e)
         {
-            if(txtBar.Text!=""&& txtPc.Text != "")
+            if (txtBar.Text != "" && txtPc.Text != "")
             {
                 CComputer tmp = new CComputer(txtBar.Text, txtPc.Text, txtStat.Text);
                 if (magazzino2.controlloPC(tmp))
@@ -73,7 +73,7 @@ namespace GestionePC
 
         private void txtBar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if(txtBar.Text !="" && txtStat.Text != "" && txtPc.Text != "")
+            if (txtBar.Text != "" && txtStat.Text != "" && txtPc.Text != "")
             {
                 btnRegistra.IsEnabled = true;
 

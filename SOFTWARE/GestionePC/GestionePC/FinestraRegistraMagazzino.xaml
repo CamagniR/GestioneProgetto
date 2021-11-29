@@ -7,14 +7,17 @@
         mc:Ignorable="d"
         Title="FinestraRegistraMagazzino" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="sfondo.jpg" Opacity="0.35"/>
+        </Grid.Background>
         <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="645,327,0,0" VerticalAlignment="Top" Width="111" Click="btnHome_Click" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="14" Height="38"/>
         <TextBox x:Name="txtBar" HorizontalAlignment="Left" Height="23" Margin="119,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Yu Gothic UI Semibold" FontSize="14" TextChanged="txtBar_TextChanged"/>
         <TextBox x:Name="txtPc" HorizontalAlignment="Left" Height="23" Margin="332,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Yu Gothic UI Semibold" FontSize="14" TextChanged="txtPc_TextChanged"/>
         <TextBox x:Name="txtStat" HorizontalAlignment="Left" Height="23" Margin="542,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Yu Gothic UI Semibold" FontSize="14" TextChanged="txtStat_TextChanged"/>
         <Label HorizontalContentAlignment="Center" Content="Inserire le informazioni per la registrazione:" HorizontalAlignment="Left" Margin="119,67,0,0" VerticalAlignment="Top" Width="543" FontFamily="Yu Gothic UI Semibold" FontSize="20"/>
-        <Button x:Name="btnRegistra" Content="Registra" HorizontalAlignment="Left" Margin="332,257,0,0" VerticalAlignment="Top" Width="120" Click="btnRegistra_Click" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="14" Height="38" IsEnabled="False" />
+        <Button x:Name="btnRegistra" Content="REGISTRA" HorizontalAlignment="Left" Margin="332,257,0,0" VerticalAlignment="Top" Width="120" Click="btnRegistra_Click" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="14" Height="38" IsEnabled="False" />
         <Button x:Name="btnBack" Content="INDIETRO" HorizontalAlignment="Left" Height="38" Margin="72,327,0,0" VerticalAlignment="Top" Width="111" Click="BtnBack_Click" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="14"/>
-        <Label Content="BARCODE:" HorizontalAlignment="Left" Margin="119,157,0,0" VerticalAlignment="Top" Width="120" Height="32" FontFamily="Yu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Barcode:" HorizontalAlignment="Left" Margin="119,157,0,0" VerticalAlignment="Top" Width="120" Height="32" FontFamily="Yu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
         <Label Content="Modello PC:" HorizontalAlignment="Left" Margin="332,157,0,0" VerticalAlignment="Top" Width="120" Height="32" FontFamily="Yu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
         <Label Content="Stato PC:" HorizontalAlignment="Left" Margin="542,157,0,0" VerticalAlignment="Top" Width="120" Height="32" FontFamily="Yu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
 

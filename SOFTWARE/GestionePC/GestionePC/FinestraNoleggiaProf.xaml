@@ -7,23 +7,27 @@
         mc:Ignorable="d"
         Title="FinestraNoleggiaProf" Height="472.437" Width="800" ResizeMode="NoResize">
     <Grid x:Name="btnHome">
-        <Button x:Name="btnHome1" Content="HOME" HorizontalAlignment="Left" Margin="647,391,0,0" VerticalAlignment="Top" Width="75" Click="btnHome_click"/>
-        <Label x:Name="___Nessun_nome_" Content="MODELLO " HorizontalAlignment="Left" Margin="209,79,0,0" VerticalAlignment="Top" Height="33" Width="88" FontSize="15"/>
-        <Label x:Name="___Nessun_nome_1" Content="STATO" HorizontalAlignment="Left" Margin="359,79,0,0" VerticalAlignment="Top" Height="31" Width="104" FontSize="15"/>
-        <Label Content="BARCODE " HorizontalAlignment="Left" Margin="45,65,0,0" VerticalAlignment="Top" Height="47" Width="120" FontSize="15"/>
-        <Label x:Name="___Nessun_nome_2" Content="DATA" HorizontalAlignment="Left" Margin="45,171,0,0" VerticalAlignment="Top" Height="47" Width="79" FontSize="15"/>
-        <Label x:Name="___Nessun_nome_3" Content="Nome" HorizontalAlignment="Left" Margin="181,171,0,0" VerticalAlignment="Top" Height="47" Width="74" FontSize="15"/>
-        <Label x:Name="___Nessun_nome_4" Content="COGNOME" HorizontalAlignment="Left" Margin="359,171,0,0" VerticalAlignment="Top" Height="47" Width="104" FontSize="15"/>
-        <Label Content="INDIRIZZI INSEGNAMENTO" HorizontalAlignment="Left" Margin="45,286,0,0" VerticalAlignment="Top" Height="47" Width="195" FontSize="15"/>
-        <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="343,223,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="177,223,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtBar" HorizontalAlignment="Left" Height="23" Margin="29,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtBar_TextChanged"/>
-        <TextBox x:Name="txtData" HorizontalAlignment="Left" Height="23" Margin="29,222,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtStat" HorizontalAlignment="Left" Height="23" Margin="359,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox x:Name="txtPc" HorizontalAlignment="Left" Height="23" Margin="205,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox x:Name="txtInsegnamento" HorizontalAlignment="Left" Height="23" Margin="66,333,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnNoleggia" Content="noleggia" HorizontalAlignment="Left" Margin="554,389,0,0" VerticalAlignment="Top" Width="75" Click="btnNoleggia_Click"/>
-        <Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Left" Height="20" Margin="413,389,0,0" VerticalAlignment="Top" Width="77" Click="BtnBack_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="sfondo.jpg" Opacity="0.35"/>
+        </Grid.Background>
+        <Button x:Name="btnHome1" Content="HOME" HorizontalAlignment="Left" Margin="134,372,0,0" VerticalAlignment="Top" Width="75" Click="btnHome_click" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold" Height="34"/>
+        <Label x:Name="___Nessun_nome_" Content="MODELLO " HorizontalAlignment="Left" Margin="359,99,0,0" VerticalAlignment="Top" Height="33" Width="88" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <Label x:Name="___Nessun_nome_1" Content="STATO" HorizontalAlignment="Left" Margin="509,99,0,0" VerticalAlignment="Top" Height="31" Width="104" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <Label Content="BARCODE " HorizontalAlignment="Left" Margin="179,99,0,0" VerticalAlignment="Top" Height="34" Width="120" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <Label x:Name="___Nessun_nome_2" Content="DATA" HorizontalAlignment="Left" Margin="179,209,0,0" VerticalAlignment="Top" Height="28" Width="79" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <Label x:Name="___Nessun_nome_3" Content="Nome" HorizontalAlignment="Left" Margin="331,211,0,0" VerticalAlignment="Top" Height="27" Width="74" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <Label x:Name="___Nessun_nome_4" Content="COGNOME" HorizontalAlignment="Left" Margin="509,211,0,0" VerticalAlignment="Top" Height="27" Width="104" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <Label Content="INDIRIZZI INSEGNAMENTO" HorizontalAlignment="Left" Margin="324,283,0,0" VerticalAlignment="Top" Height="47" Width="195" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="493,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="327,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtBar" HorizontalAlignment="Left" Height="23" Margin="179,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtBar_TextChanged" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtData" HorizontalAlignment="Left" Height="23" Margin="179,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtStat" HorizontalAlignment="Left" Height="23" Margin="509,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtPc" HorizontalAlignment="Left" Height="23" Margin="345,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtInsegnamento" HorizontalAlignment="Left" Height="23" Margin="345,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnNoleggia" Content="NOLEGGIA" HorizontalAlignment="Left" Margin="678,374,0,0" VerticalAlignment="Top" Width="82" Click="btnNoleggia_Click" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold" Height="32"/>
+        <Button x:Name="btnBack" Content="INDIETRO" HorizontalAlignment="Left" Height="32" Margin="29,374,0,0" VerticalAlignment="Top" Width="77" Click="BtnBack_Click" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="14" FontWeight="Bold"/>
+        <Label Content="NOLEGGIA AD UN PROF:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="248,24,0,0" VerticalAlignment="Top" Width="305" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontSize="24" FontWeight="Bold" Height="38"/>
 
     </Grid>
 </Window>

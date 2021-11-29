@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="FinestraElimina" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="93,362,0,0" VerticalAlignment="Top" Width="89" Click="btnHome_Click" Height="29"/>
-        <Label Content="FINESTRA ELIMINA" HorizontalAlignment="Left" Margin="500,22,0,0" VerticalAlignment="Top" Height="61" Width="222"/>
-        <TextBox x:Name="txtBarCode" HorizontalAlignment="Left" Height="45" Margin="93,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <Label Content="INSERIRE BAR CODE" HorizontalAlignment="Left" Height="36" Margin="93,69,0,0" VerticalAlignment="Top" Width="138"/>
-        <Button x:Name="btnElimina" Content="ELIMINA" HorizontalAlignment="Left" Height="54" Margin="624,337,0,0" VerticalAlignment="Top" Width="124" Click="BtnElimina_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="sfondo.jpg" Opacity="0.35"/>
+        </Grid.Background>
+        <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="54,337,0,0" VerticalAlignment="Top" Width="124" Click="btnHome_Click" Height="54" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <TextBox x:Name="txtBarCode" HorizontalAlignment="Left" Height="45" Margin="289,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold" TextChanged="txtBarCode_TextChanged"/>
+        <Label Content="INSERIRE BAR CODE" HorizontalAlignment="Left" Height="36" Margin="320,127,0,0" VerticalAlignment="Top" Width="138" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <Button x:Name="btnElimina" Content="ELIMINA" HorizontalAlignment="Left" Height="54" Margin="624,337,0,0" VerticalAlignment="Top" Width="124" Click="BtnElimina_Click" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold" IsEnabled="False"/>
 
-    </Grid> 
+    </Grid>
 </Window>

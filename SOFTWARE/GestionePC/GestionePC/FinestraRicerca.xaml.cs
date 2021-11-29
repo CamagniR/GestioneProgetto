@@ -195,5 +195,14 @@ namespace GestionePC
             txtClasse.IsEnabled = false;
             destinazione = 3;
         }
+
+        private void txtBancode_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if( txtBancode.Text != "")
+            {
+                btnCerca.IsEnabled = true;
+
+            }
+        }
     }
 }

@@ -132,5 +132,10 @@ namespace GestionePC
             finestra.Show();
             this.Hide();
         }
+
+        private void txtInsegnamento_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

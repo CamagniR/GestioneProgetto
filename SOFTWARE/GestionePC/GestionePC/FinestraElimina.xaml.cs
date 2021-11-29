@@ -70,5 +70,13 @@ namespace GestionePC
 
 
         }
+
+        private void txtBarCode_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtBarCode.Text != "") {
+                btnElimina.IsEnabled = true;
+            
+            }
+        }
     }
 }
