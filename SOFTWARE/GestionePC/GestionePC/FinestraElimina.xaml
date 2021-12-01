@@ -12,7 +12,7 @@
         </Grid.Background>
         <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="54,337,0,0" VerticalAlignment="Top" Width="124" Click="btnHome_Click" Height="54" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
         <TextBox x:Name="txtBarCode" HorizontalAlignment="Left" Height="45" Margin="289,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold" TextChanged="txtBarCode_TextChanged"/>
-        <Label Content="INSERIRE BAR CODE" HorizontalAlignment="Left" Height="36" Margin="320,127,0,0" VerticalAlignment="Top" Width="138" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
+        <Label Content="Inserire Barcode:" HorizontalAlignment="Left" Height="36" Margin="320,127,0,0" VerticalAlignment="Top" Width="138" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold"/>
         <Button x:Name="btnElimina" Content="ELIMINA" HorizontalAlignment="Left" Height="54" Margin="624,337,0,0" VerticalAlignment="Top" Width="124" Click="BtnElimina_Click" FontSize="14" FontFamily="Yu Gothic UI SemiboldYu Gothic UI Semibold" FontWeight="Bold" IsEnabled="False"/>
 
     </Grid>
