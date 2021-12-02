@@ -54,6 +54,22 @@ namespace GestionePC
             return indirizziInsegnamento;
         }
 
+        public void setNome(string n)
+        {
+            nome=n;
+        }
+        public void setCognome(string n)
+        {
+            cognome = n;
+        }
+        public void setDataRegistro(string n)
+        {
+            dataRegistro = n;
+        }
+        public void setIndirizzi(string n)
+        {
+            indirizziInsegnamento = n;
+        }
         public override string ToString()
         {
             return PC + " " + nome + " " + cognome + " " + dataRegistro + " " + indirizziInsegnamento;

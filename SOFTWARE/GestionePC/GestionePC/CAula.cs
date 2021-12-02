@@ -54,6 +54,23 @@ namespace GestionePC
             return aula;
         }
 
+        public void setDataRegsitro(string d)
+        {
+            dataRegistro=d;
+        }
+        public void setIndirizzo(string d)
+        {
+            indirizzo = d;
+        }
+        public void setClasse(string d)
+        {
+            classe = d;
+        }
+        public void setAula(string d)
+        {
+            aula = d;
+        }
+
         public override string ToString()
         {
             return PC+" "+dataRegistro+" "+ indirizzo+" "+classe+" "+aula;

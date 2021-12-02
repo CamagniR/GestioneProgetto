@@ -133,9 +133,5 @@ namespace GestionePC
             this.Hide();
         }
 
-        private void txtInsegnamento_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

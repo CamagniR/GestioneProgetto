@@ -114,46 +114,108 @@ namespace GestionePC
 
 
         private void btnModifica_Click(object sender, RoutedEventArgs e)
-        {          
-            txtBarCode.IsEnabled = true;
-            txtModello.IsEnabled = true;
+        {                              
             txtStato.IsEnabled = true;
             btnSalva.IsEnabled = true;
+            if (selezionato == 2)
+            {
+                txtAula.IsEnabled = true;
+                txtData.IsEnabled = true;
+                txtIndirizzo.IsEnabled = true;
+                txtClasse.IsEnabled = true;
+            }
+            if (selezionato == 3)
+            {
+                txtDataProf.IsEnabled = true;
+                txtInsegna.IsEnabled = true;
+                txtNome.IsEnabled = true;
+                txtCognome.IsEnabled = true;
+            }
+            modCla.IsEnabled = true;
+            modMag.IsEnabled = true;
+            ModProf.IsEnabled = true;
         }
 
         private void btnSalva_Click(object sender, RoutedEventArgs e)
         {
-            if (selezionato == 1)
+            if (selezionato != destinazione)
             {
-                magazzino2.eliminaConBarCode(barCode);
-            }
-            else if (selezionato == 2)
-            {
-                PCinAula2.eliminaConBarCode(barCode);
-            }
-            else
-            {
-                pcNoleggio2.eliminaConBarCode(barCode);
-            }
+                if (selezionato == 1)
+                {
+                    magazzino2.eliminaConBarCode(barCode);
+                    magazzino2.Salva();
+                }
+                else if (selezionato == 2)
+                {
+                    PCinAula2.eliminaConBarCode(barCode);
+                    PCinAula2.Salva();
+                }
+                else
+                {
+                    pcNoleggio2.eliminaConBarCode(barCode);
+                    pcNoleggio2.Salva();
+                }
 
-            CComputer temp = new CComputer(barCode, txtModello.Text, txtStato.Text);
-            if (destinazione == 1)
-            {
-                magazzino2.registraPC(temp);
-                magazzino2.Salva();
-            }
-            else if (destinazione == 2)
-            {
-                CAula tmp = new CAula(temp,txtData.Text,txtIndirizzo.Text,txtClasse.Text,txtAula.Text);
-                PCinAula2.aggiungiInLista(tmp);
-                PCinAula2.Salva();
+                CComputer temp = new CComputer(barCode, txtModello.Text, txtStato.Text);
+                if (destinazione == 1)
+                {
+                    magazzino2.registraPC(temp);
+                    magazzino2.Salva();
+                }
+                else if (destinazione == 2)
+                {
+                    CAula tmp = new CAula(temp, txtData.Text, txtIndirizzo.Text, txtClasse.Text, txtAula.Text);
+                    PCinAula2.aggiungiInLista(tmp);
+                    PCinAula2.Salva();
+                }
+                else
+                {
+                    CDocente tmp = new CDocente(temp, txtDataProf.Text, txtNome.Text, txtCognome.Text, txtInsegna.Text);
+                    pcNoleggio2.aggiungiInLista(tmp);
+                    pcNoleggio2.Salva();
+                }
             }
             else
             {
-                CDocente tmp = new CDocente(temp,txtDataProf.Text,txtNome.Text,txtCognome.Text,txtInsegna.Text);
-                pcNoleggio2.aggiungiInLista(tmp);
-                pcNoleggio2.Salva();
+                if (selezionato == 1)
+                {
+                    magazzino2.oggettoGetMagazzino(barCode).setSpecifiche(txtStato.Text);
+                    magazzino2.Salva();
+                }
+                else if (selezionato == 2)
+                {
+                    PCinAula2.oggettoGetCAula(barCode).getPC().setSpecifiche(txtStato.Text);
+                    PCinAula2.oggettoGetCAula(barCode).setAula(txtAula.Text);
+                    PCinAula2.oggettoGetCAula(barCode).setClasse(txtClasse.Text);
+                    PCinAula2.oggettoGetCAula(barCode).setDataRegsitro(txtData.Text);
+                    PCinAula2.oggettoGetCAula(barCode).setIndirizzo(txtIndirizzo.Text);
+                    PCinAula2.Salva();
+                }
+                else
+                {
+                    pcNoleggio2.oggettoGetCDocente(barCode).getPC().setSpecifiche(txtStato.Text);
+                    pcNoleggio2.oggettoGetCDocente(barCode).setCognome(txtCognome.Text);
+                    pcNoleggio2.oggettoGetCDocente(barCode).setNome(txtNome.Text);
+                    pcNoleggio2.oggettoGetCDocente(barCode).setDataRegistro(txtDataProf.Text);
+                    pcNoleggio2.oggettoGetCDocente(barCode).setIndirizzi(txtInsegna.Text);
+                    pcNoleggio2.eliminaConBarCode(barCode);
+                    pcNoleggio2.Salva();
+                }
             }
+            
+
+            MessageBox.Show("modifica effettuata");
+            txtBarCode.Text = "";
+            txtModello.Text = "";
+            txtStato.Text = "";
+            txtAula.Text = "";
+            txtData.Text = "";
+            txtIndirizzo.Text = "";
+            txtClasse.Text = "";
+            txtDataProf.Text = "";
+            txtInsegna.Text = "";
+            txtNome.Text = "";
+            txtCognome.Text = "";
 
         }
 
