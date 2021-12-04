@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-R:\Desktop\GestioneProgetto\SOFTWARE\GestionePC\GestionePC\obj\Debug\
+C:\Users\rcama\Desktop\GestioneProgetto\SOFTWARE\GestionePC\GestionePC\obj\Debug\
 GestionePC
 none
 false
 DEBUG;TRACE
-R:\Desktop\GestioneProgetto\SOFTWARE\GestionePC\GestionePC\App.xaml
+C:\Users\rcama\Desktop\GestioneProgetto\SOFTWARE\GestionePC\GestionePC\App.xaml
 91382814005
 
-19-1273900545
+20-749001829
 13581178305
 FinestraElimina.xaml;FinestraEliminaDefinitivo.xaml;FinestraHome.xaml;FinestraNoleggiaProf.xaml;FinestraRegistra.xaml;FinestraRegistraAula.xaml;FinestraRegistraMagazzino.xaml;FinestraRicerca.xaml;MainWindow.xaml;
 
-False
+True
 
