@@ -140,39 +140,34 @@ namespace GestionePC
         {
             if (selezionato != destinazione)
             {
-                if (selezionato == 1)
-                {
-                    magazzino2.eliminaConBarCode(barCode);
-                    magazzino2.Salva();
-                }
-                else if (selezionato == 2)
+                if (selezionato == 2)
                 {
                     PCinAula2.eliminaConBarCode(barCode);
                     PCinAula2.Salva();
                 }
-                else
+                else if (selezionato == 3)
                 {
                     pcNoleggio2.eliminaConBarCode(barCode);
                     pcNoleggio2.Salva();
                 }
 
-                CComputer temp = new CComputer(barCode, txtModello.Text, txtStato.Text);
-                if (destinazione == 1)
-                {
-                    magazzino2.registraPC(temp);
-                    magazzino2.Salva();
-                }
-                else if (destinazione == 2)
+                CComputer temp = new CComputer(barCode, txtModello.Text, txtStato.Text);               
+                if (destinazione == 2)
                 {
                     CAula tmp = new CAula(temp, txtData.Text, txtIndirizzo.Text, txtClasse.Text, txtAula.Text);
                     PCinAula2.aggiungiInLista(tmp);
                     PCinAula2.Salva();
                 }
-                else
+                else if(destinazione == 3)
                 {
                     CDocente tmp = new CDocente(temp, txtDataProf.Text, txtNome.Text, txtCognome.Text, txtInsegna.Text);
                     pcNoleggio2.aggiungiInLista(tmp);
                     pcNoleggio2.Salva();
+                }
+                else
+                {
+                    magazzino2.oggettoGetMagazzino(barCode).setSpecifiche(txtStato.Text);
+                    magazzino2.Salva();
                 }
             }
             else
@@ -216,7 +211,20 @@ namespace GestionePC
             txtInsegna.Text = "";
             txtNome.Text = "";
             txtCognome.Text = "";
-
+            txtAula.IsEnabled = false;
+            txtData.IsEnabled = false;
+            txtIndirizzo.IsEnabled = false;
+            txtClasse.IsEnabled = false;
+            txtDataProf.IsEnabled = false;
+            txtInsegna.IsEnabled = false;
+            txtNome.IsEnabled = false;
+            txtCognome.IsEnabled = false;
+            modCla.IsEnabled = false;
+            modMag.IsEnabled = false;
+            ModProf.IsEnabled = false;
+            txtStato.IsEnabled = false;
+            btnSalva.IsEnabled = false;
+            btnModifica.IsEnabled = false;
         }
 
         private void modMag_Click(object sender, RoutedEventArgs e)
