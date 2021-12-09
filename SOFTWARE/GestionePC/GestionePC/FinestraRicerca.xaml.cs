@@ -107,6 +107,10 @@ namespace GestionePC
                     btnModifica.IsEnabled = true;
                     selezionato = 1;
                 }
+                else
+                {
+                    MessageBox.Show("pc non trovato");
+                }
 
             }
 
